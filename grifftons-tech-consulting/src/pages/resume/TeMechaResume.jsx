@@ -6,7 +6,7 @@ function TeMechaResume() {
             <h1>TeMecha Griffin</h1>
             <p><strong>Software Engineer</strong></p>
             <img
-            src="/images/profilePicture.jpg"
+            src="/assets/profilePicture.jpg"
             width="100"
             height="125"
             style={{ textAlign: 'center' }}
@@ -24,82 +24,68 @@ function TeMechaResume() {
             </section>
             
             <h2>Experience</h2>
-            <a
+
+            <section>
+                <h3>
+                    <a
             href="https://www.claytoncountyga.gov/government/information-technology/"
             target="_blank">
             Clayton County Board of Commissioners Department of Information
             Technology</a>
-            <br />
-            Service Desk Technician, March 2024 - October 2024
-            <ul>
-            <li>
-                Diagnosed and resolved hardware and connectivity issues for county
-                computers, terminals, thin clients, printers, and other peripherals,
-                ensuring minimal downtime.
-            </li>
-            <li>
-                Installed, repaired, and maintained telecommunications systems, network
-                cabling, and multimedia systems, supporting seamless communication
-                across county departments.
-            </li>
-            <li>
-                Deployed and configured county computers, software, hardware, and
-                peripherals, including workstations, network printers, and Ethernet
-                adapters, ensuring proper system integration and functionality.
-            </li>
-            </ul>
-            <br />
-            Career Transition, Software Engineer, April 2022-present
-            <br />
-            <ul>
-            <li>
-                Actively pursuing a career shift into software development, with a focus
-                on acquiring technical skills and hands-on experience in programming.
-            </li>
-            <li>
-                Completed training and coursework in [mention specific programming
-                languages, tools, or frameworks you’ve focused on], and working on
-                [describe any personal projects, coding challenges, or contributions to
-                open-source].
-            </li>
-            <li>
-                Developing a strong foundation in [mention any specific areas of
-                interest like web development, mobile apps, back-end development, etc.],
-                and continuously expanding technical knowledge through self-directed
-                learning and online resources.
-            </li>
-            </ul>
-            <br />
-            <a href="https://www.primetherapeutics.com/" target="_blank"
-            >Prime Therapeutics</a
-            >
-            <br />
-            Member Services Specialist, August 2021-April 2022
-            <br />
-            <ul>
-            <li>
-                Handled customer and client inquiries related to pharmacy insurance,
-                delivering high-quality support and achieving first-call resolution.
-            </li>
-            <li>
-                Logged and tracked claims cases, ensuring accurate documentation and
-                timely follow-up.
-            </li>
-            <li>
-                Managed customer relationships by providing exceptional service,
-                addressing concerns, and resolving issues in a prompt and professional
-                manner.
-            </li>
-            <li>
-                Analyzed complex issues, identified root causes, and implemented
-                effective solutions to improve service delivery.
-            </li>
-            <li>
-                Verified insurance coverage and benefits for patients, ensuring correct
-                billing and payment processes were followed.
-            </li>
-            </ul>
-            <br />
+                </h3>
+                <p><strong>Service Desk Technician</strong>, March 2024 - October 2024</p>
+                <ul>
+                    <li>
+                        Diagnosed and resolved hardware and connectivity issues for county
+                        computers, terminals, thin clients, printers, and other peripherals,
+                        ensuring minimal downtime.
+                    </li>
+                    <li>
+                        Installed, repaired, and maintained telecommunications systems, network
+                        cabling, and multimedia systems, supporting seamless communication
+                        across county departments.
+                    </li>
+                    <li>
+                        Deployed and configured county computers, software, hardware, and
+                        peripherals, including workstations, network printers, and Ethernet
+                        adapters, ensuring proper system integration and functionality.
+                    </li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>
+                    <a href="https://www.primetherapeutics.com/" target="_blank"
+            >Prime Therapeutics</a>
+                </h3>
+                <p><strong>Member Services Specialist</strong>, April 2022 - March 2024</p>
+                <ul>
+                    <li>
+                        Handled customer and client inquiries related to pharmacy insurance,
+                        delivering high-quality support and achieving first-call resolution.
+                    </li>
+                    <li>
+                        Logged and tracked claims cases, ensuring accurate documentation and
+                        timely follow-up.
+                    </li>
+                    <li>
+                        Managed customer relationships by providing exceptional service,
+                        addressing concerns, and resolving issues in a prompt and professional
+                        manner.
+                    </li>
+                    <li>
+                        Analyzed complex issues, identified root causes, and implemented
+                        effective solutions to improve service delivery.
+                    </li>
+                    <li>
+                        Verified insurance coverage and benefits for patients, ensuring correct
+                        billing and payment processes were followed.
+                    </li>
+                </ul>
+            </section>
+
+{/* FINISH EDITING RESUME, BREAK DOWN INTO SECTIONS --- MOVE LINE AS BOOKMARK */}
+
             <a href="https://transcom.com/us/" target="_blank">Transcom</a>
             <br />iOS Technical Support Analyst, August 2018-June 2021
             <br />
@@ -277,65 +263,46 @@ function TeMechaResume() {
                 integrity and availability.
             </li>
             </ul>
+
+
             <h2>Education</h2>
-            <a href="https://perscholas.org/" target="_blank">Per Scholas</a>
-            <br />
-            Software Engineering, October 2024-February 2025
-            <br />
-            <br />
-            <a href="https://100devs.org/" target="_blank">100Devs</a>
-            <br />
-            Software Engineering, December 2023-Present
-            <br />
-            <br />
-            <a href="https://www.acilearning.com/" target="_blank">ACI Learning</a>
-            <br />
-            Network Support Specialist, October 2023-December 2023
-            <br />
-            <br />
-            <a href="https://www.snhu.edu/" target="_blank"
-            >Southern New Hampshire University</a
-            >
-            <br />
-            Bachelor of Science, Computer Information Systems, Software Engineering,
-            October 2021-March 2024
-            <br />
-            <br />
-            <a href="https://www.airuniversity.af.edu/Barnes/CCAF/" target="_blank"
-            >Community College of the Air Force</a
-            >
-            <br />
-            Associate, Computer Information Systems, November 2005-September 2009
-            <br />
-            <br />
-            Hirschi Math/Science International Baccalaureate Magnet High School
-            <br />
-            Diploma, August 2001-May 2005
+            <section>
+                <p><a href="https://perscholas.org/" target="_blank" rel="noopener noreferrer">Per Scholas</a><br />
+                    Software Engineering, October 2024-February 2025</p>
+                <p><a href="https://100devs.org/" target="_blank" rel="noopener noreferrer">100Devs</a><br />
+                    Software Engineering, December 2023 – Present</p>
+                <p><a href="https://www.acilearning.com/" target="_blank" rel="noopener noreferrer">ACI Learning</a><br />
+                    Network Support Specialist, October 2023 – December 2023</p>
+                <p><a href="https://www.snhu.edu/" target="_blank" rel="noopener noreferrer">Southern New Hampshire University</a><br />
+                    B.S. in Computer Information Systems – Software Engineering, October 2021 – March 2024</p>
+                <p><a href="https://www.airuniversity.af.edu/Barnes/CCAF/" target="_blank" rel="noopener noreferrer">Community College of the Air Force</a><br />
+                    Associate, Computer Information Systems, November 2005 – September 2009</p>
+                <p>Hirschi Math/Science IB Magnet High School<br />
+                    Diploma, August 2001 – May 2005</p>
+            </section>
+            
             <h2>Websites</h2>
             <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/temecha-griffin" target="_blank"
-                ><i className="fa-brands fa-linkedin fa-2xl"></i
-                ></a>
-            </li>
-            <br />
-            <li>
-                <a href="https://github.com/tanewton0523" target="_blank"
-                ><i className="fa-brands fa-github fa-2xl"></i
-                ></a>
-            </li>
-            <br />
-            <li>
-                <a href="https://x.com/MsGem0523" target="_blank"
-                ><i className="fa-brands fa-x-twitter fa-2xl"></i
-                ></a>
-            </li>
-            <br />
-            <li>
-                <a href="https://linktr.ee/MsGem0523" target="_blank"
-                ><img src="/images/linktree.png" width="40"
-                /></a>
-            </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/temecha-griffin" target="_blank" rel="noopener noreferrer">
+                        <i className="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/tanewton0523" target="_blank" rel="noopener noreferrer">
+                        <i className="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/MsGem0523" target="_blank" rel="noopener noreferrer">
+                        <i className="fa-brands fa-x-twitter fa-2xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linktr.ee/MsGem0523" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/linktree.png" width="40" alt="Linktree icon" />
+                    </a>
+                </li>
             </ul>
         </div>
     );

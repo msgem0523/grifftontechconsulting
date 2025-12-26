@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePicture from '../../assets/profilePicture.jpg';
 
 function TeMechaResume() {
     return(
@@ -6,7 +7,7 @@ function TeMechaResume() {
             <h1>TeMecha Griffin</h1>
             <p><strong>Software Engineer</strong></p>
             <img
-            src="/assets/profilePicture.jpg"
+            src={profilePicture}
             width="100"
             height="125"
             style={{ textAlign: 'center' }}

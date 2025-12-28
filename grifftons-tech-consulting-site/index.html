@@ -4,8 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Griffton's Tech Consulting</title>
+    <meta name="description" content="Griffton's Tech Consulting helps small businesses build and improve modern websites, apps, and digital systems." />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
+    <header class="header">
+        <nav class="nav">
+            <a class="brand" href="#top" aria-label="Griffton's Tech Consulting home">
+                <span class="brand-mark">G</span>
+                <span class="brand-text">Griffton's Tech Consulting</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" data-nav>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a class="btn small" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">Web | Automation | Support</p>
+                    <h1>Modern websites and practical tech that helps your business run smoother.</h1>
+                    <p class="lead">
+                        We build clean, fast, mobile-friendly sites and simple systems that save time-without the confusing tech talk.
+                    </p>
+
+                    <div class ="actions">
+                        <a class="btn-primary" href="#contact">Get a Quote</a>
+                        <a class="btn" href="#work">See Our Work</a>
+                    </div>
+
+                    <ul class="trust">
+                        <li>✅ Mobile-first</li>
+                        <li>✅ Fast delivery</li>
+                        <li>✅ Easy to maintain</li>
+                    </ul>
+                </div>
+
+                <div class="hero-card">
+                    <h2>Quick Services Snapshot</h2>
+                    <ul class="checklist">
+                        <li>Landing pages & business websites</li>
+                        <li>Portfolio sites & personal branding</li>
+                        <li>Forms, booking links, QR pages</li>
+                        <li>Fixes, updates, and cleanups</li>
+                    </ul>
+                    <a class="link" href="#services">View all services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Services</h2>
+                <p class="subhead">Simple, high-impact deliverables that make you look polished and credible online.</p>
+
+                <div class="grid">
+                    <article class="card">
+                        <h3>Business Websites</h3>
+                        <p>Clean, responsive sites built for trust, clarity, and conversions.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Landing Pages</h3>
+                        <p>One-page sites for promotions, events, launches, or services.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>QR Code Pages</h3>
+                        <p>A single link that routes customers to all your socials, booking, and payments.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Updates & Fixes</h3>
+                        <p>Bug fixes, design cleanup, mobile issues, speed improvements, and content updates.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Basic Automations</h3>
+                        <p>Simple workflows: form capture, email notifications, or organizing submissions.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Tech Support</h3>
+                        <p>Help troubleshooting websites, hosting, domains, and tools.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section alt">
+            <div class="container">
+              <h2>Selected Work</h2>
+              <p class="subhead">A few builds and projects—swap these with your real links as you go.</p>
+
+              <div class="grid">
+                <article class="card">
+                  <h3>As We Grow</h3>
+                  <p>Community-focused site with branded content and product pages.</p>
+                  <div class="card-links">
+                    <a class="link" href="#" aria-disabled="true">Live →</a>
+                    <a class="link" href="https://github.com/msgem0523/aswegrow" target="_blank" rel="noreferrer">Code →</a>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h3>GrowthGuard</h3>
+                  <p>Pediatric-friendly tracker concept (MERN) designed for parents.</p>
+                  <div class="card-links">
+                    <a class="link" href="#" aria-disabled="true">Live →</a>
+                    <a class="link" href="#" aria-disabled="true">Code →</a>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h3>Portfolio Template</h3>
+                  <p>Clean starter template built to ship fast and look professional.</p>
+                  <div class="card-links">
+                    <a class="link" href="#" aria-disabled="true">Live →</a>
+                    <a class="link" href="#" aria-disabled="true">Code →</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+              <h2>About</h2>
+              <div class="two-col">
+                <p>
+                    Griffton’s Tech Consulting focuses on practical, no-fluff solutions—websites that look good,
+                    load fast, and are easy to update. We blend development + support so you don’t feel stuck
+                    when tech gets weird.
+                </p>
+                <p>
+                    We love working with small businesses, creators, and service providers who want a clean online presence
+                    without paying “enterprise pricing” for a basic site.
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt">
+            <div class="container">
+              <h2>Contact</h2>
+              <p class="subhead">Tell us what you need and we’ll respond with next steps.</p>
+
+              <div class="contact-grid">
+                <form class="form" data-form>
+                  <label>
+                    Name
+                    <input name="name" required />
+                  </label>
+
+                  <label>
+                    Email
+                    <input name="email" type="email" required />
+                  </label>
+
+                  <label>
+                    What do you need?
+                    <textarea name="message" rows="5" required></textarea>
+                  </label>
+
+                  <button class="btn primary" type="submit">Send</button>
+                  <p class="status" data-status></p>
+                </form>
+
+                <div class="contact-card">
+                  <h3>Prefer email?</h3>
+                  <p>Send a quick note and include your timeline + goal.</p>
+                  <a class="btn" href="mailto:msgem0523@gmail.com">msgem0523@gmail.com</a>
+
+                  <div class="mini">
+                    <p><strong>Typical response:</strong> within 1–2 business days</p>
+                    <p><strong>Best info to include:</strong> what you do, what you want built, and any examples you like.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+      <div class="container footer-row">
+        <small>© <span data-year></span> Griffton’s Tech Consulting</small>
+        <a class="link" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

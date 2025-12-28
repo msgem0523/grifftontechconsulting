@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bold & Beautiful Landing Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+
+      <!-- HEADER -->
+      <header>
+        <div class="brand">
+          <!-- TODO: Replace 'G' and text with your brand -->
+          <div class="brand-mark">G</div>
+          <div class="brand-text">
+            <div class="brand-name">Griffton Landing Studio</div>
+            <div class="brand-sub">Bold QR landing pages for creators & brands</div>
+          </div>
+        </div>
+        <div class="nav-cta">
+          <div class="nav-chip">Now booking 2 new projects this month</div>
+          <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Book a consult <span>→</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-main">
+          <div class="hero-pill">
+            <span class="dot"></span>
+            QR-powered landing pages that make you look booked & busy
+          </div>
+
+          <div class="hero-eyebrow">CREATOR & SMALL BUSINESS LANDING PAGES</div>
+
+          <h1 class="hero-title">
+            One bold page that feels like
+            <span>your entire brand.</span>
+          </h1>
+
+          <p class="hero-sub">
+            I design landing pages that match your energy — bold, clean, and easy
+            to use. Your QR code, booking link, IG, and payment options all live
+            in one beautiful, swipe-friendly place.
+          </p>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric-label">Turnaround</div>
+              <div class="metric-value">3–5 days</div>
+              <div class="metric-tag">from booked to live</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Clients served</div>
+              <div class="metric-value">15+</div>
+              <div class="metric-tag">stylists, coaches & vendors</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">One link</div>
+              <div class="metric-value">All you need</div>
+              <div class="metric-tag">print on cards, posters & more</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <!-- TODO: Replace mailto link -->
+            <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+              Start my landing page <span>→</span>
+            </button>
+            <button class="btn-ghost" onclick="document.getElementById('packages').scrollIntoView({behavior:'smooth'})">
+              View packages & details
+            </button>
+          </div>
+        </div>
+
+        <!-- HERO VISUAL -->
+        <div class="hero-visual">
+          <div class="phone-mock">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ps-tag">Client demo</div>
+              <!-- TODO: Replace with client name -->
+              <div class="ps-title">Crown & Glow Beauty Bar</div>
+              <div class="ps-links">
+                <div class="ps-pill">Book now</div>
+                <div class="ps-pill">Instagram</div>
+                <div class="ps-pill">Facebook</div>
+                <div class="ps-pill">Payment links</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="qr-panel">
+            <div class="qr-box">
+              <!-- TODO: Replace QR URL with real QR image -->
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://example.com"
+                alt="QR code preview"
+              />
+            </div>
+            <div class="qr-copy">
+              Print this QR on your cape, mirror, cards, flyers, or booth setup —
+              it all leads back to one beautiful landing page.
+            </div>
+          </div>
+
+          <p class="hero-note">
+            This layout is perfect for barbers, stylists, nail techs, MUAs,
+            coaches, crafters, and anyone who needs one link to do it all.
+          </p>
+        </div>
+      </section>
+
+      <!-- MAIN PANELS -->
+      <div class="stack">
+
+        <!-- WHO IT'S FOR -->
+        <section class="panel alt">
+          <div class="panel-header">
+            <div>
+              <div class="panel-kicker">WHO THIS IS DESIGNED FOR</div>
+              <h2 class="panel-title">If this sounds like you, you’re in the right place.</h2>
+            </div>
+            <div class="pill-row">
+              <div class="pill">Service-based business</div>
+              <div class="pill">Creative or wellness brand</div>
+              <div class="pill">Pop-up vendor or event booth</div>
+            </div>
+          </div>
+
+          <div class="benefits">
+            <div class="benefit">
+              <div class="benefit-label">Booked & busy</div>
+              <div class="benefit-title">You need clients to find you fast.</div>
+              <p class="benefit-copy">
+                Your booking link is buried in your IG bio or somewhere in your
+                DMs. This landing page puts your booking front and center so
+                people can lock in an appointment without extra steps.
+              </p>
+            </div>
+            <div class="benefit">
+              <div class="benefit-label">QR everywhere</div>
+              <div class="benefit-title">You love the idea of one smart code.</div>
+              <p class="benefit-copy">
+                I create a custom QR code that sends people straight to your
+                landing page — perfect for capes, windows, business cards,
+                posters, or vendor setups.
+              </p>
+            </div>
+            <div class="benefit">
+              <div class="benefit-label">Brand energy</div>
+              <div class="benefit-title">You want your site to match your vibe.</div>
+              <p class="benefit-copy">
+                Colors, fonts, wording — everything is customized so it feels
+                like <em>you</em>, not a generic link tree. Your brand deserves
+                a page that looks as good as your work.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="panel" id="packages">
+          <div class="panel-header">
+            <div>
+              <div class="panel-kicker">HOW IT WORKS</div>
+              <h2 class="panel-title">Simple process. Clean results.</h2>
+            </div>
+          </div>
+
+          <div class="benefits">
+            <div class="benefit">
+              <div class="benefit-label">Step 1</div>
+              <div class="benefit-title">You send the basics.</div>
+              <p class="benefit-copy">
+                I’ll ask for your logo (if you have one), colors, photos, links,
+                and how you want people to contact or book you.
+              </p>
+            </div>
+            <div class="benefit">
+              <div class="benefit-label">Step 2</div>
+              <div class="benefit-title">I design & build your page.</div>
+              <p class="benefit-copy">
+                I create a custom landing page layout, connect your links, and
+                design a unique QR code. You get a preview to review.
+              </p>
+            </div>
+            <div class="benefit">
+              <div class="benefit-label">Step 3</div>
+              <div class="benefit-title">You launch & share it everywhere.</div>
+              <p class="benefit-copy">
+                Once you approve, your landing page goes live and you’ll receive
+                your QR code files ready for print & digital use.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRICING / CTA -->
+        <section class="panel alt">
+          <div class="panel-header">
+            <div>
+              <div class="panel-kicker">INVESTMENT</div>
+              <h2 class="panel-title">Flat-rate landing page with QR setup.</h2>
+            </div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pricing-main">
+              <!-- TODO: Update this pricing to match your actual offers -->
+              <div class="price-badge">$XXX</div>
+              <div class="price-note">One-time investment · No monthly fee</div>
+              <div class="pricing-tags">
+                <span class="pricing-pill">Custom design</span>
+                <span class="pricing-pill">QR code included</span>
+                <span class="pricing-pill">Mobile-first layout</span>
+                <span class="pricing-pill">Basic updates (1 round)</span>
+              </div>
+            </div>
+            <div class="pricing-cta">
+              <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                Apply for a landing page
+              </button>
+              <p class="tiny">
+                I currently take a limited number of projects per month to make
+                sure each design actually fits your brand, not just a template
+                swap.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT FOOTER -->
+        <footer class="cta-footer" id="contact">
+          <!-- TODO: Replace with your real contact info -->
+          <div>
+            Ready to start? Email me at
+            <a href="mailto:youremail@example.com">youremail@example.com</a>
+            with “Landing Page Inquiry” in the subject line.
+          </div>
+          <div>
+            Follow along:
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">@yourhandle</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

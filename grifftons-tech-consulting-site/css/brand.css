@@ -1,0 +1,13 @@
+:root{
+  --brand: #b57bff;
+  --brandSoft: #e6d6ff;
+  --text: #ffffff;
+  --muted: #c7bedb;
+
+  --radiusLg: 20px;
+  --radiusXl: 28px;
+  --radiusPill: 999px;
+
+  --shadowSoft: 0 18px 45px rgba(0,0,0,.45);
+  --fontMain: system-ui, -apple-system, "Segoe UI", sans-serif;
+}

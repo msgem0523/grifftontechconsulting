@@ -27,7 +27,7 @@ html {
 }
 body { 
   margin: 0; 
-  font-family: system-ui, -apple-system, Segoe UI, Arial, sans-serif; 
+  font-family: var(--fontMain); 
   line-height: 1.5; 
   color: var(--text);
   background: var(--bg); 

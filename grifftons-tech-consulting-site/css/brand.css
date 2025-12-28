@@ -1,13 +1,24 @@
 :root{
-  --brand: #b57bff;
-  --brandSoft: #e6d6ff;
-  --text: #ffffff;
-  --muted: #c7bedb;
+  /* Core brand tokens */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --text: #121212;
+  --muted: rgba(18,18,18,.7);
+  --border: #eaeaea;
 
-  --radiusLg: 20px;
-  --radiusXl: 28px;
+  /* Brand accent (change later if you want) */
+  --brand: #111111;
+  --brandText: #ffffff;
+
+  /* Layout + vibe */
+  --container: 1100px;
+  --radius: 18px;
   --radiusPill: 999px;
 
-  --shadowSoft: 0 18px 45px rgba(0,0,0,.45);
-  --fontMain: system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Shadows */
+  --shadowSoft: 0 8px 24px rgba(0,0,0,0.04);
+  --shadowCard: 0 10px 30px rgba(0,0,0,0.06);
+
+  /* Typography */
+  --fontMain: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }

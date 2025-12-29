@@ -1,22 +1,24 @@
 :root {
   /* Brand colors */
-  --bg: #ffffff;
-  --surface: #ffffff;
-  --text: #121212;
-  --muted: rgba(18,18,18,.7);
-  --border: #eaeaea;
+  --bg: #07040c;
+  --surface: #100819;
+  --text: #fdfbff;
+  --muted: #c1b6d9;
+  --border: rgba(229, 215, 255, 0.18);
 
   /* Brand accent */
-  --brand: #111111;
+  --brand: #b57bff;
   --brandText: #ffffff;
+  --accent: #b57bff;
+  --accent-soft: #e6d6ff;
 
   /* Layout */
   --container: 1100px;
   --radius: 18px;
 
   /* Effects */
-  --shadow-soft: 0 8px 24px rgba(0,0,0,0.04);
-  --shadow-card: 0 10px 30px rgba(0,0,0,0.06);
+  --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.75);
+  --shadow-card: 0 18px 45px rgba(0, 0, 0, 0.45);
 }
 
 * { 
@@ -30,7 +32,9 @@ body {
   font-family: var(--fontMain); 
   line-height: 1.5; 
   color: var(--text);
-  background: var(--bg); 
+  background: radial-gradient(circle at top left, #2f1650 0, transparent 55%),
+              radial-gradient(circle at bottom right, #160d27 0, #050208 60%);
+  -webkit-font-smoothing: antialiased;
 }
 
 .container { 
@@ -42,9 +46,9 @@ body {
 .header { 
   position: sticky; 
   top: 0; 
-  background: rgba(255,255,255,.92); 
+  background: rgba(7, 4, 12, 0.92); 
   backdrop-filter: blur(8px); 
-  border-bottom: 1px solid #eee; 
+  border-bottom: 1px solid var(--border); 
   z-index: 10; 
 }
 .nav { 
@@ -66,8 +70,11 @@ body {
   height: 34px; 
   display: grid; 
   place-items: center; 
-  border: 1px solid #ddd; 
+  background: radial-gradient(circle at 20% 0, #ffffff, #b57bff 55%, #5b2ccf);
+  color: #190827;
+  font-weight: 800;
   border-radius: 12px; 
+  box-shadow: var(--shadow-soft);
 }
 .brand-text { 
   font-weight: 800; 
@@ -76,11 +83,13 @@ body {
 .nav-toggle { 
   display: none; 
   margin-left: auto; 
-  background: white; 
-  border: 1px solid #ddd; 
+  background: var(--surface); 
+  border: 1px solid var(--border); 
   border-radius: 12px; 
   padding: 6px 10px; 
-  font-size: 18px; 
+  font-size: 18px;
+  color: var(--text);
+  cursor: pointer;
 }
 .nav-links { 
   list-style: none; 
@@ -92,21 +101,21 @@ body {
 }
 .nav-links a { 
   text-decoration: none; 
-  color: #222; 
+  color: var(--text); 
   padding: 8px 10px; 
   border-radius: 12px; 
 }
 .nav-links a:hover { 
-  background: #f4f4f4; 
+  background: rgba(181, 123, 255, 0.1);
 }
 
 .section { 
   padding: 64px 0; 
 }
 .section.alt { 
-  background: #fafafa; 
-  border-top: 1px solid #eee; 
-  border-bottom: 1px solid #eee; 
+  background: rgba(16, 8, 25, 0.5); 
+  border-top: 1px solid var(--border); 
+  border-bottom: 1px solid var(--border);
 }
 h1 { 
   font-size: clamp(30px, 4vw, 44px); 
@@ -135,7 +144,7 @@ p {
 }
 
 .hero { padding: 76px 0; 
-  background: linear-gradient(180deg, #ffffff, #fafafa); 
+  background: linear-gradient(180deg, rgba(47, 22, 80, 0.3), transparent); 
 }
 .hero-grid { 
   display: grid; 
@@ -144,11 +153,11 @@ p {
   align-items: start; 
 }
 .hero-card { 
-  border: 1px solid #eee; 
-  background: white; 
+  border: 1px solid var(--border); 
+  background: var(--surface); 
   border-radius: 18px; 
   padding: 16px; 
-  box-shadow: 0 8px 24px rgba(0,0,0,0.04); 
+  box-shadow: var(--shadow-card); 
 }
 
 .actions { 
@@ -160,17 +169,26 @@ p {
 .btn { 
   display: inline-block; 
   text-decoration: none; 
-  color: #111; 
-  background: #fff; 
-  border: 1px solid #ddd; 
+  color: var(--text); 
+  background: var(--surface); 
+  border: 1px solid var(--border); 
   padding: 10px 14px; 
   border-radius: 14px; 
   cursor: pointer; 
-  font-weight: 700; }
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background: rgba(181, 123, 255, 0.1);
+  border-color: var(--accent);
+}
 .btn.primary { 
-  background: #111; 
-  color: #fff; 
-  border-color: #111; 
+  background: var(--accent); 
+  color: #190827; 
+  border-color: var(--accent); 
+}
+.btn.primary:hover {
+  background: #d1a6ff;
 }
 .btn.small { 
   padding: 8px 12px; 
@@ -178,12 +196,13 @@ p {
 }
 
 .link { 
-  color: #111; 
+  color: var(--accent-soft); 
   font-weight: 700; 
   text-decoration: none; 
 }
 .link:hover { 
-  text-decoration: underline; 
+  text-decoration: underline;
+  color: var(--accent);
 }
 
 .trust { 
@@ -234,13 +253,6 @@ p {
 .contact-grid { 
   display: grid; 
   grid-template-columns: 1.1fr 0.9fr; 
-  gap: 14px; 
-  align-items: start; 
-  margin-top: 14px; 
-}
-.form { 
-  display: grid; 
-  gap: 12px; 
 }
 label { 
   display: grid; 
@@ -251,7 +263,13 @@ input, textarea {
   font: inherit; 
   padding: 10px 12px; 
   border-radius: 14px; 
-  border: 1px solid #ddd; 
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
 }
 .status { 
   margin: 0; 
@@ -259,8 +277,8 @@ input, textarea {
 }
 
 .contact-card { 
-  border: 1px solid #eee; 
-  background: white; 
+  border: 1px solid var(--border); 
+  background: var(--surface); 
   border-radius: 18px; 
   padding: 16px; 
 }

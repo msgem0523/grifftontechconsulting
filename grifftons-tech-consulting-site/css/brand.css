@@ -1,14 +1,16 @@
 :root{
   /* Core brand tokens */
-  --bg: #ffffff;
-  --surface: #ffffff;
-  --text: #121212;
-  --muted: rgba(18,18,18,.7);
-  --border: #eaeaea;
+  --bg: #07040c;
+  --surface: #100819;
+  --text: #fdfbff;
+  --muted: #c1b6d9;
+  --border: rgba(229, 215, 255, 0.18);
 
-  /* Brand accent (change later if you want) */
-  --brand: #111111;
+  /* Brand accent */
+  --brand: #b57bff;
   --brandText: #ffffff;
+  --accent: #b57bff;
+  --accent-soft: #e6d6ff;
 
   /* Layout + vibe */
   --container: 1100px;
@@ -16,8 +18,8 @@
   --radiusPill: 999px;
 
   /* Shadows */
-  --shadowSoft: 0 8px 24px rgba(0,0,0,0.04);
-  --shadowCard: 0 10px 30px rgba(0,0,0,0.06);
+  --shadowSoft: 0 24px 60px rgba(0, 0, 0, 0.75);
+  --shadowCard: 0 18px 45px rgba(0, 0, 0, 0.45);
 
   /* Typography */
   --fontMain: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;

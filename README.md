@@ -60,3 +60,42 @@ This repository contains multiple project directories.
 - The `grifftontechconsulting-site` folder is the **primary source** for the live site.
 - The `grifftontechconsulting-react` folder is reserved for future expansion and experimentation.
 - Only the `-site` directory should be referenced for deployment unless otherwise noted.
+
+
+*(Structure may evolve as features and services expand.)*
+
+---
+
+## 🌱 Current Status
+
+🚧 **In Active Development**
+
+Planned enhancements include:
+- Service pages
+- Portfolio showcase
+- Contact and inquiry forms
+- Landing page templates
+- Client onboarding workflows
+
+---
+
+## 🤝 Collaboration
+
+This project is co-created and maintained by:
+- **TeMecha Griffin** – Software Developer  
+- **Cameron Griffin** – Technical Consultant  
+
+---
+
+## 📬 Contact
+
+For inquiries, collaborations, or consultations:
+
+📧 Email: **msgem0523@gmail.com**
+
+---
+
+## 📜 License
+
+This project is proprietary and owned by Griffton’s Tech Consulting.  
+All rights reserved.

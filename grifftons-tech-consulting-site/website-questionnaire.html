@@ -41,157 +41,208 @@
               Section 1: Business Information
             </h2>
 
-        <div class="form-group">
-          <label for="business-name">Business Name:</label>
-          <input 
-            type="text"
-            id="business-name"
-            name="businessName"
-            autocomplete="organization"
-            placeholder="Your Business Name"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="owner-name">Owner or Primary Contact Name:</label>
-          <input
-            type="text"
-            id="owner-name"
-            name="ownerName"
-            autocomplete="name"
-            placeholder="First and Last Name"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email Address:</label>
-          <input 
-            type="email"
-            id="email"
-            name="email"
-            autocomplete="email"
-            placeholder="example@noemail.com"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="phone">Phone Number:</label>
-          <input 
-            type="tel"
-            id="phone"
-            name="phone"
-            autocomplete="tel"
-            placeholder="(123) 456-7890"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="business-address">Business Address:</label>
-          <textarea
-            id="business-address"
-            name="businessAddress"
-            rows="3"
-            autocomplete="street-address"
-            placeholder="Street, City, State, ZIP"
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="business-description">Business Description:</label>
-          <textarea
-            id="business-description"
-            name="businessDescription"
-            rows="6"
-            placeholder="Briefly describe your business."
-          ></textarea>
-        </div>
-
-        <fieldset>
-          <legend>Do you currently have a website?</legend>
-
-          <div class="radio-group">
-            <label>
+            <div class="form-group">
+              <label for="business-name">Business Name:</label>
               <input
-                type="radio"
-                name="hasWebsite"
-                value="yes"
+                type="text"
+                id="business-name"
+                name="businessName"
+                autocomplete="organization"
+                placeholder="Your Business Name"
+                required
               />
-              Yes
-            </label>
+            </div>
 
-            <label>
+            <div class="form-group">
+              <label for="owner-name">Owner or Primary Contact Name:</label>
               <input
-                type="radio"
-                name="hasWebsite"
-                value="no"
+                type="text"
+                id="owner-name"
+                name="ownerName"
+                autocomplete="name"
+                placeholder="First and Last Name"
+                required
               />
-              No
-            </label>
-          </div>
-        </fieldset>
+            </div>
 
-        <div class="form-group">
-          <label for="current-website">
-            Current Website Address
-          </label>
-          <input
-            type="url"
-            id="current-website"
-            name="currentWebsite"
-            placeholder="https://example.com"
-          />
-          <small>
-            Leave this blank if you do not have a current website.
-          </small>
-        </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="example@noemail.com"
+                required
+              />
+            </div>
 
-        <div class="form-group">
-          <label for="facebook">Facebook Page</label>
-          <input
-            type="url"
-            id="facebook"
-            name="facebook"
-            placeholder="https://facebook.com/yourbusiness"
-          />
-        </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                placeholder="(123) 456-7890"
+                required
+              />
+            </div>
 
-        <div class="form-group">
-          <label for="instagram">Instagram Profile</label>
-          <input
-            type="url"
-            id="instagram"
-            name="instagram"
-            placeholder="https://instagram.com/yourbusiness"
-          />
-        </div>
+            <div class="form-group">
+              <label for="business-address">Business Address:</label>
+              <textarea
+                id="business-address"
+                name="businessAddress"
+                rows="3"
+                autocomplete="street-address"
+                placeholder="Street, City, State, ZIP"
+              ></textarea>
+            </div>
 
-        <div class="form-group">
-          <label for="linkedin">LinkedIn Profile</label>
-          <input
-            type="url"
-            id="linkedin"
-            name="linkedin"
-            placeholder="https://linkedin.com/company/yourbusiness"
-          />
-        </div>
+            <div class="form-group">
+              <label for="business-description">Business Description:</label>
+              <textarea
+                id="business-description"
+                name="businessDescription"
+                rows="6"
+                placeholder="Briefly describe your business."
+              ></textarea>
+            </div>
 
-        <div class="form-group">
-          <label for="other-social">Other Social Media Profiles</label>
-          <textarea
-            id="other-social"
-            name="otherSocial"
-            rows="8"
-            placeholder="Add one link per line. Example: https://socialmedia.com/yourbusiness"
-          ></textarea>
-        </div>
-      </section>
+            <fieldset>
+              <legend>Do you currently have a website?</legend>
+
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="hasWebsite"
+                    value="yes"
+                  />
+                  Yes
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="hasWebsite"
+                    value="no"
+                  />
+                  No
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="current-website">
+                Current Website Address
+              </label>
+              <input
+                type="url"
+                id="current-website"
+                name="currentWebsite"
+                placeholder="https://example.com"
+              />
+              <small>
+                Leave this blank if you do not have a current website.
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="facebook">Facebook Page</label>
+              <input
+                type="url"
+                id="facebook"
+                name="facebook"
+                placeholder="https://facebook.com/yourbusiness"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="instagram">Instagram Profile</label>
+              <input
+                type="url"
+                id="instagram"
+                name="instagram"
+                placeholder="https://instagram.com/yourbusiness"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="linkedin">LinkedIn Profile</label>
+              <input
+                type="url"
+                id="linkedin"
+                name="linkedin"
+                placeholder="https://linkedin.com/company/yourbusiness"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="other-social">Other Social Media Profiles</label>
+              <textarea
+                id="other-social"
+                name="otherSocial"
+                rows="8"
+                placeholder="Add one link per line. Example: https://socialmedia.com/yourbusiness"
+              ></textarea>
+            </div>
+          </form>
+        </section>
+
+        <section>
+          <h2>Section 2: About Your Business</h2>
+        </section>
+
+        <section>
+          <h2>Section 3: Project Goals</h2>
+        </section>
+
+        <section>
+          <h2>Section 4: Branding</h2>
+        </section>
+
+        <section>
+          <h2>Section 5: Website Content</h2>
+        </section>
+
+        <section>
+          <h2>Section 6: Website Pages</h2>
+        </section>
+
+        <section>
+          <h2>Section 7: Features</h2>
+        </section>
+
+        <section>
+          <h2>Section 8: SEO</h2>
+        </section>
+
+        <section>
+          <h2>Section 9: Design Inspiration</h2>
+        </section>
+
+        <section>
+          <h2>Section 10: Domain & Hosting</h2>
+        </section>
+
+        <section>
+          <h2>Section 11: Timeline</h2>
+        </section>
+
+        <section>
+          <h2>Section 12: Maintenance</h2>
+        </section>
+
+        <section>
+          <h2>Section 13: Additional Information</h2>
+        </section>
 
       </div>
     </section>
   </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Discovery Questionnaire</title>
+  <meta name="description" content="A questionnaire to help us understand your website needs and goals. Please fill out the form to provide us with the necessary information for your website project." />
+  <link rel="canonical" href="https://grifftontechconsulting.com/website-questionnaire.html" />
+  <link rel="stylesheet" href="css/brand.css" />
+  <link rel="stylesheet" href="css/base.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="index.html" aria-label="Griffton's Tech Consulting home">
+        <span class="brand-mark">G</span>
+        <span class="brand-text">Griffton's Tech Consulting</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" data-nav>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a class="btn small" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="container">
+        <h1>Website Discovery Questionnaire</h1>
+        <p>Please fill out the form below to provide us with the necessary information for your website project. This will help us understand your needs and goals, and allow us to create a tailored solution for your business.</p>
+
+        <form action="#" method="post">
+          <section class="form-section" aria-labelledby="business-information">
+            <h2 id="business-information">
+              Section 1: Business Information
+            </h2>
+
+        <div class="form-group">
+          <label for="business-name">Business Name:</label>
+          <input 
+            type="text"
+            id="business-name"
+            name="businessName"
+            autocomplete="organization"
+            placeholder="Your Business Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="owner-name">Owner or Primary Contact Name:</label>
+          <input
+            type="text"
+            id="owner-name"
+            name="ownerName"
+            autocomplete="name"
+            placeholder="First and Last Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input 
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="example@noemail.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input 
+            type="tel"
+            id="phone"
+            name="phone"
+            autocomplete="tel"
+            placeholder="(123) 456-7890"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="business-address">Business Address:</label>
+          <textarea
+            id="business-address"
+            name="businessAddress"
+            rows="3"
+            autocomplete="street-address"
+            placeholder="Street, City, State, ZIP"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="business-description">Business Description:</label>
+          <textarea
+            id="business-description"
+            name="businessDescription"
+            rows="6"
+            placeholder="Briefly describe your business."
+          ></textarea>
+        </div>
+
+        <fieldset>
+          <legend>Do you currently have a website?</legend>
+
+          <div class="radio-group">
+            <label>
+              <input
+                type="radio"
+                name="hasWebsite"
+                value="yes"
+              />
+              Yes
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hasWebsite"
+                value="no"
+              />
+              No
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="current-website">
+            Current Website Address
+          </label>
+          <input
+            type="url"
+            id="current-website"
+            name="currentWebsite"
+            placeholder="https://example.com"
+          />
+          <small>
+            Leave this blank if you do not have a current website.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="facebook">Facebook Page</label>
+          <input
+            type="url"
+            id="facebook"
+            name="facebook"
+            placeholder="https://facebook.com/yourbusiness"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="instagram">Instagram Profile</label>
+          <input
+            type="url"
+            id="instagram"
+            name="instagram"
+            placeholder="https://instagram.com/yourbusiness"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="linkedin">LinkedIn Profile</label>
+          <input
+            type="url"
+            id="linkedin"
+            name="linkedin"
+            placeholder="https://linkedin.com/company/yourbusiness"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="other-social">Other Social Media Profiles</label>
+          <textarea
+            id="other-social"
+            name="otherSocial"
+            rows="8"
+            placeholder="Add one link per line. Example: https://socialmedia.com/yourbusiness"
+          ></textarea>
+        </div>
+      </section>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>

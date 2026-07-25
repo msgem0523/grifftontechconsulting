@@ -182,7 +182,7 @@
             </div>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               About Your Business
             </summary>
@@ -221,7 +221,7 @@
             </div>
 
             <div class="form-group">
-              <label for="ideal-customer">Who is your ideal customer?:</label>
+              <label for="ideal-customer">Who is your ideal customer?</label>
               <textarea
                 id="ideal-customer"
                 name="idealCustomer"
@@ -232,72 +232,297 @@
             </div>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Project Goals
             </summary>
 
-            <div class="form-group">
-              <label for="project-goals">What type of website do you need?</label>
+            <fieldset>
+              <legend>What do you want your website to accomplish?</legend>
+
+              <div class="checkbox-group">
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="generateLeads"
+                  />
+                  Generate Contact Form Inquiries
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="increaseCalls"
+                  />
+                  Increase Phone Calls
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="bookAppointments"
+                  />
+                  Book Appointments / Reservations
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="sellProducts"
+                  />
+                  Sell Products Online
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="buildCredibility"
+                  />
+                  Build Brand Awareness & Credibility
+                </label>
+                
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="showcasePortfolio"
+                  />
+                  Showcase Portfolio / Work Samples
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="shareInformation"
+                  />
+                  Share Information / Resources
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="emailList"
+                  />
+                  Build Email List / Newsletter Signups
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="seo"
+                  />
+                  Improve Search Engine Visibility (SEO)
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="other"
+                  />
+                  Other
+                </label>
+
+                <div class="form-group">
+                  <label for="website-goals-other">
+                    If Other, please specify:
+                  </label>
+
+                  <input
+                    type="text"
+                    name="websiteGoalsOther"
+                    placeholder="Please specify"
+                  />
+                </div>
+                
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>What type of website do you need?</legend>
+
+              <div class="checkbox-group">
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="business"
+                  />
+                  Business Website
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="landingPage"
+                  />
+                  Landing Page
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="portfolio"
+                  />
+                  Portfolio
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="e-commerce"
+                  />
+                  Online Store / E-commerce
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="bookingWebsite"
+                  />
+                  Booking Website
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="restaurant"
+                  />
+                  Restaurant / Food Service
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="nonprofit"
+                  />
+                  Nonprofit / Charity
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="blog"
+                  />
+                  Blog / Content Website
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="paymentOption"
+                  />
+                  Payment Option / Donation Website
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteGoals"
+                    value="faqPage"
+                  />
+                  FAQ Page
+                </label>
+
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="websiteType"
+                    value="other"
+                  />
+                  Other
+                </label>
+
+                <div class="form-group">
+                  <label for="website-goals-other">
+                    If Other, please specify:
+                  </label>
+
+                  <input
+                    type="text"
+                    name="websiteGoalsOther"
+                    placeholder="Please specify"
+                  />
+                </div>
               
-            </div>
+              </div>
+            </fieldset>
+
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Branding
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Website Content
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Website Pages
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Features
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               SEO
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Design Inspiration
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Domain & Hosting
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Timeline
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Maintenance & Support (Optional)
             </summary>
           </details>
 
-          <details class="form-section" closed>
+          <details class="form-section">
             <summary>
               Additional Information (Optional)
             </summary>

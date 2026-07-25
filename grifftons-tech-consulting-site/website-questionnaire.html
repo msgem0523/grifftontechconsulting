@@ -33,17 +33,14 @@
     <section class="section">
       <div class="container">
         <h1>Website Discovery Questionnaire</h1>
-        <p>Please fill out the form below to provide us with the necessary information for your website project. This will help us understand your needs and goals, and allow us to create a tailored solution for your business.</p>
+        <p>Thank you for choosing Griffton's Tech Consulting! We're excited to learn about your business and your vision. The more detail you provide, the better we can design a website that reflects your brand and helps you achieve your goals. Most clients complete this questionnaire in about 10-15 minutes. Please fill out the form below to provide us with the necessary information for your website project. This will help us understand your needs and goals, and allow us to create a tailored solution for your business.</p>
 
         <form action="#" method="post">
           
-          <section
-            class="form-section"
-            aria-labelledby="business-information"
-          >
-            <h2 id="business-information">
-              Section 1: Business Information
-            </h2>
+          <details class="form-section" open>
+            <summary>
+              Business Information
+            </summary>
 
             <div class="form-group">
               <label for="business-name">Business Name:</label>
@@ -76,7 +73,7 @@
                 id="email"
                 name="email"
                 autocomplete="email"
-                placeholder="name@example.com"
+                placeholder="Name@example.com"
                 required
               />
             </div>
@@ -131,7 +128,7 @@
 
             <div class="form-group">
               <label for="current-website">
-                Current Website Address
+                Current Website Address:
               </label>
               <input
                 type="url"
@@ -145,7 +142,7 @@
             </div>
 
             <div class="form-group">
-              <label for="facebook">Facebook Page</label>
+              <label for="facebook">Facebook Page:</label>
               <input
                 type="url"
                 id="facebook"
@@ -155,7 +152,7 @@
             </div>
 
             <div class="form-group">
-              <label for="instagram">Instagram Profile</label>
+              <label for="instagram">Instagram Profile:</label>
               <input
                 type="url"
                 id="instagram"
@@ -165,7 +162,7 @@
             </div>
 
             <div class="form-group">
-              <label for="linkedin">LinkedIn Profile</label>
+              <label for="linkedin">LinkedIn Profile:</label>
               <input
                 type="url"
                 id="linkedin"
@@ -175,7 +172,7 @@
             </div>
 
             <div class="form-group">
-              <label for="other-social">Other Social Media Profiles</label>
+              <label for="other-social">Other Social Media Profiles:</label>
               <textarea
                 id="other-social"
                 name="otherSocial"
@@ -183,15 +180,12 @@
                 placeholder="Add one link per line. Example: https://socialmedia.com/yourbusiness"
               ></textarea>
             </div>
-          </section>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="about-your-business"
-          >
-            <h2 id="about-your-business">
-              Section 2: About Your Business
-            </h2>
+          <details class="form-section" closed>
+            <summary>
+              About Your Business
+            </summary>
 
             <div class="form-group">
               <label for="business-description">Business Description:</label>
@@ -200,109 +194,114 @@
                 name="businessDescription"
                 rows="6"
                 placeholder="Briefly describe your business."
+                required
               ></textarea>
             </div>
 
-          </section>
+            <div class="form-group">
+              <label for="business-offerings">What products or services do you offer?</label>
+              <textarea
+                id="business-offerings"
+                name="businessOfferings"
+                rows="6"
+                placeholder="List products and services"
+                required
+              ></textarea>
+            </div>
 
-          <section
-            class="form-section"
-            aria-labelledby="project-goals"
-          >
-            <h2 id="project-goals">
-              Section 3: Project Goals
-            </h2>
-          </section>
+            <div class="form-group">
+              <label for="diff-competitors">What differentiates your business from competitors?</label>
+              <textarea
+                id="diff-competitors"
+                name="diffCompetitors"
+                rows="6"
+                placeholder="What makes your business unique?"
+                required
+              ></textarea>
+            </div>
 
-          <section
-            class="form-section"
-            aria-labelledby="branding"
-          >
-            <h2 id="branding">
-              Section 4: Branding
-            </h2>
-          </section>
+            <div class="form-group">
+              <label for="ideal-customer">Who is your ideal customer?:</label>
+              <textarea
+                id="ideal-customer"
+                name="idealCustomer"
+                rows="6"
+                placeholder="Describe your target audience."
+                required
+              ></textarea>
+            </div>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="website-content"
-          >
-            <h2 id="website-content">
-              Section 5: Website Content
-            </h2>
-          </section>
+          <details class="form-section" closed>
+            <summary>
+              Project Goals
+            </summary>
 
-          <section
-            class="form-section"
-            aria-labelledby="website-pages"
-          >
-            <h2 id="website-pages">
-              Section 6: Website Pages
-            </h2>
-          </section>
+            <div class="form-group">
+              <label for="project-goals">What type of website do you need?</label>
+              
+            </div>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="features"
-          >
-            <h2 id="features">
-              Section 7: Features
-            </h2>
-          </section>
+          <details class="form-section" closed>
+            <summary>
+              Branding
+            </summary>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="seo"
-          >
-            <h2 id="seo">
-              Section 8: SEO
-            </h2>
-          </section>
+          <details class="form-section" closed>
+            <summary>
+              Website Content
+            </summary>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="design-inspiration"
-          >
-            <h2 id="design-inspiration">
-              Section 9: Design Inspiration
-            </h2>
-          </section>
+          <details class="form-section" closed>
+            <summary>
+              Website Pages
+            </summary>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="domain-hosting"
-          >
-            <h2 id="domain-hosting">
-              Section 10: Domain & Hosting
-            </h2>
-          </section>
+          <details class="form-section" closed>
+            <summary>
+              Features
+            </summary>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="timeline"
-          >
-            <h2 id="timeline">
-              Section 11: Timeline
-            </h2>
-          </section>
+          <details class="form-section" closed>
+            <summary>
+              SEO
+            </summary>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="maintenance"
-          >
-            <h2 id="maintenance">
-              Section 12: Maintenance
-            </h2>
-          </section>
+          <details class="form-section" closed>
+            <summary>
+              Design Inspiration
+            </summary>
+          </details>
 
-          <section
-            class="form-section"
-            aria-labelledby="additional-information"
-          >
-            <h2 id="additional-information">
-              Section 13: Additional Information
-            </h2>
-          </section>
+          <details class="form-section" closed>
+            <summary>
+              Domain & Hosting
+            </summary>
+          </details>
+
+          <details class="form-section" closed>
+            <summary>
+              Timeline
+            </summary>
+          </details>
+
+          <details class="form-section" closed>
+            <summary>
+              Maintenance & Support (Optional)
+            </summary>
+          </details>
+
+          <details class="form-section" closed>
+            <summary>
+              Additional Information (Optional)
+            </summary>
+          </details>
 
           <button class="btn" type="submit">
             Submit Questionnaire

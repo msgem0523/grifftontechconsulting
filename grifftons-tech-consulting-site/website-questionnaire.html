@@ -36,7 +36,11 @@
         <p>Please fill out the form below to provide us with the necessary information for your website project. This will help us understand your needs and goals, and allow us to create a tailored solution for your business.</p>
 
         <form action="#" method="post">
-          <section class="form-section" aria-labelledby="business-information">
+          
+          <section
+            class="form-section"
+            aria-labelledby="business-information"
+          >
             <h2 id="business-information">
               Section 1: Business Information
             </h2>
@@ -72,7 +76,7 @@
                 id="email"
                 name="email"
                 autocomplete="email"
-                placeholder="example@noemail.com"
+                placeholder="name@example.com"
                 required
               />
             </div>
@@ -100,16 +104,6 @@
               ></textarea>
             </div>
 
-            <div class="form-group">
-              <label for="business-description">Business Description:</label>
-              <textarea
-                id="business-description"
-                name="businessDescription"
-                rows="6"
-                placeholder="Briefly describe your business."
-              ></textarea>
-            </div>
-
             <fieldset>
               <legend>Do you currently have a website?</legend>
 
@@ -119,6 +113,7 @@
                     type="radio"
                     name="hasWebsite"
                     value="yes"
+                    required
                   />
                   Yes
                 </label>
@@ -188,57 +183,132 @@
                 placeholder="Add one link per line. Example: https://socialmedia.com/yourbusiness"
               ></textarea>
             </div>
-          </form>
-        </section>
+          </section>
 
-        <section>
-          <h2>Section 2: About Your Business</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="about-your-business"
+          >
+            <h2 id="about-your-business">
+              Section 2: About Your Business
+            </h2>
 
-        <section>
-          <h2>Section 3: Project Goals</h2>
-        </section>
+            <div class="form-group">
+              <label for="business-description">Business Description:</label>
+              <textarea
+                id="business-description"
+                name="businessDescription"
+                rows="6"
+                placeholder="Briefly describe your business."
+              ></textarea>
+            </div>
 
-        <section>
-          <h2>Section 4: Branding</h2>
-        </section>
+          </section>
 
-        <section>
-          <h2>Section 5: Website Content</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="project-goals"
+          >
+            <h2 id="project-goals">
+              Section 3: Project Goals
+            </h2>
+          </section>
 
-        <section>
-          <h2>Section 6: Website Pages</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="branding"
+          >
+            <h2 id="branding">
+              Section 4: Branding
+            </h2>
+          </section>
 
-        <section>
-          <h2>Section 7: Features</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="website-content"
+          >
+            <h2 id="website-content">
+              Section 5: Website Content
+            </h2>
+          </section>
 
-        <section>
-          <h2>Section 8: SEO</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="website-pages"
+          >
+            <h2 id="website-pages">
+              Section 6: Website Pages
+            </h2>
+          </section>
 
-        <section>
-          <h2>Section 9: Design Inspiration</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="features"
+          >
+            <h2 id="features">
+              Section 7: Features
+            </h2>
+          </section>
 
-        <section>
-          <h2>Section 10: Domain & Hosting</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="seo"
+          >
+            <h2 id="seo">
+              Section 8: SEO
+            </h2>
+          </section>
 
-        <section>
-          <h2>Section 11: Timeline</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="design-inspiration"
+          >
+            <h2 id="design-inspiration">
+              Section 9: Design Inspiration
+            </h2>
+          </section>
 
-        <section>
-          <h2>Section 12: Maintenance</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="domain-hosting"
+          >
+            <h2 id="domain-hosting">
+              Section 10: Domain & Hosting
+            </h2>
+          </section>
 
-        <section>
-          <h2>Section 13: Additional Information</h2>
-        </section>
+          <section
+            class="form-section"
+            aria-labelledby="timeline"
+          >
+            <h2 id="timeline">
+              Section 11: Timeline
+            </h2>
+          </section>
 
+          <section
+            class="form-section"
+            aria-labelledby="maintenance"
+          >
+            <h2 id="maintenance">
+              Section 12: Maintenance
+            </h2>
+          </section>
+
+          <section
+            class="form-section"
+            aria-labelledby="additional-information"
+          >
+            <h2 id="additional-information">
+              Section 13: Additional Information
+            </h2>
+          </section>
+
+          <button class="btn" type="submit">
+            Submit Questionnaire
+          </button>
+
+        </form>
       </div>
     </section>
   </main>

@@ -259,7 +259,8 @@ label {
   gap: 6px; 
   font-weight: 700; 
 }
-input, textarea { 
+input, 
+textarea {
   font: inherit; 
   padding: 10px 12px; 
   border-radius: 14px; 
@@ -268,12 +269,32 @@ input, textarea {
   color: var(--text);
 }
 input:focus, textarea:focus {
-  outline: none;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
   border-color: var(--accent);
 }
 .status { 
   margin: 0; 
   font-weight: 700; 
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  max-width: 650px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  flex-shrink: 0;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: .75rem;
 }
 
 .contact-card { 
@@ -297,6 +318,40 @@ input:focus, textarea:focus {
   gap: 12px; 
   border-top: 1px solid #eee; 
   padding-top: 16px; 
+}
+
+.form-section {
+  background: rgba(16, 8, 25, 0.92);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: .75rem;
+}
+
+summary {
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 860px) {

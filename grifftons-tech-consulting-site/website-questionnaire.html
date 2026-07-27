@@ -454,6 +454,197 @@
             <summary>
               Branding
             </summary>
+
+            <fieldset>
+              <legend>Do you already have a logo?</legend>
+
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="hasLogo"
+                    value="yes"
+                    required
+                  />
+                  Yes
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="hasLogo"
+                    value="no"
+                  />
+                  No
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="logo-upload">
+                If you have a logo, please upload it here:
+              </label>
+              
+              <input
+                type="file"
+                id="logo-upload"
+                name="logoUpload"
+                accept=".png, .jpg, .jpeg, .svg, .pdf"
+              />
+
+              <small>
+                Accepted file types: PNG, JPG, JPEG, SVG, PDF. Maximum file size: 5MB.
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="brand-colors">
+                Brand Colors:
+              </label>
+          
+              <input
+                type="text"
+                id="brand-colors"
+                name="brandColors"
+                placeholder="Example: navy blue, gold, and white"
+              />
+            </div>
+          
+            <div class="form-group">
+              <label for="brand-fonts">
+                Fonts, if any:
+              </label>
+          
+              <input
+                type="text"
+                id="brand-fonts"
+                name="brandFonts"
+                placeholder="Example: Playfair Display and Montserrat"
+              />
+            </div>
+          
+            <fieldset>
+              <legend>How would you describe your brand style?</legend>
+          
+              <div class="checkbox-group">
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="modern"
+                  />
+                  Modern
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="luxury"
+                  />
+                  Luxury
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="minimal"
+                  />
+                  Minimal
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="professional"
+                  />
+                  Professional
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="fun"
+                  />
+                  Fun
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="bold"
+                  />
+                  Bold
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="elegant"
+                  />
+                  Elegant
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="tech"
+                  />
+                  Tech-Focused
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="rustic"
+                  />
+                  Rustic
+                </label>
+          
+                <label class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="brandStyle"
+                    value="other"
+                  />
+                  Other
+                </label>
+              </div>
+          
+              <div class="form-group">
+                <label for="brand-style-other">
+                  If Other, please specify:
+                </label>
+          
+                <input
+                  type="text"
+                  id="brand-style-other"
+                  name="brandStyleOther"
+                  placeholder="Please specify"
+                />
+              </div>
+            </fieldset>
+          
+            <div class="form-group">
+              <label for="brand-feeling">
+                Describe the feeling you want visitors to have when they visit your website.
+              </label>
+          
+              <textarea
+                id="brand-feeling"
+                name="brandFeeling"
+                rows="5"
+                placeholder="Example: confident, welcomed, inspired, relaxed, or excited"
+              ></textarea>
+            </div>
+            
           </details>
 
           <details class="form-section">

@@ -13,7 +13,7 @@ export function SiteFooter(){
     {title:'Elsewhere',items:['LinkedIn','GitHub','Read.cv']}
   ]}/>;
 }
-export function Writing({go}){
+export function Writing(){
   const { Section, SectionHead, Text, Chip, Subscribe } = window.FableDesignSystem_270490;
   const {writing}=window.TGData;
   return <>

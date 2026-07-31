@@ -1,0 +1,13 @@
+/* Site-level glue on top of the design system tokens. */
+
+/* Scroll-reveal entrance per the system's motion rules: fade up 12px, 0.25s, soft out-curve. */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity var(--motion-default) var(--ease-out),
+    transform var(--motion-default) var(--ease-out);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

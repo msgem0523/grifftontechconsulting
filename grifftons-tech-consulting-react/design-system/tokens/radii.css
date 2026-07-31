@@ -1,0 +1,5 @@
+:root{
+--radius-xs:8px;--radius-s:14px;--radius-m:20px;--radius-l:28px;--radius-xl:40px;--radius-pill:999px;--radius-round:50%;
+/* Rounder than a typical product system on purpose. Cards 28 · media 20 ·
+   chips and buttons fully round · nothing sharper than 8. */
+}

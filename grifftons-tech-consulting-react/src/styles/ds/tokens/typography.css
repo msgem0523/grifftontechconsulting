@@ -1,0 +1,26 @@
+:root{
+--font-display:'Newsreader',Georgia,serif;
+--font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+
+/* display — Newsreader. Generous, tightly tracked, tight leading. */
+--display-xxl-size:88px;--display-xxl-lh:88px;--display-xxl-ls:-2.5px;
+--display-xl-size:64px;--display-xl-lh:66px;--display-xl-ls:-1.8px;
+--display-l-size:48px;--display-l-lh:52px;--display-l-ls:-1.2px;
+--display-m-size:36px;--display-m-lh:42px;--display-m-ls:-0.8px;
+--display-s-size:28px;--display-s-lh:34px;--display-s-ls:-0.5px;
+--display-xs-size:22px;--display-xs-lh:28px;--display-xs-ls:-0.3px;
+
+/* body — Inter. Roomier leading than a product UI; this is reading copy. */
+--body-xl-size:21px;--body-xl-lh:34px;--body-xl-ls:-0.3px;
+--body-l-size:18px;--body-l-lh:30px;--body-l-ls:-0.2px;
+--body-m-size:16px;--body-m-lh:27px;--body-m-ls:-0.2px;
+--body-s-size:14px;--body-s-lh:22px;--body-s-ls:-0.1px;
+--body-xs-size:12px;--body-xs-lh:18px;--body-xs-ls:0px;
+
+/* label — Inter, uppercase micro type */
+--label-l-size:13px;--label-l-lh:16px;--label-l-ls:0.08em;
+--label-m-size:11px;--label-m-lh:14px;--label-m-ls:0.1em;
+
+--weight-light:300;--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+--measure-prose:66ch;
+}

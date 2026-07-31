@@ -1,0 +1,10 @@
+:root{
+--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;--space-32:128px;--space-40:160px;
+
+/* Generous by default — whitespace is the loudest thing in this system. */
+--section-pad-y:96px;--section-pad-y-large:160px;--page-gutter:32px;
+
+--width-prose:680px;--width-content:1080px;--width-wide:1360px;
+--bp-mobile:600px;--bp-tablet:900px;--bp-desktop:1200px;
+--control-height:52px;
+}

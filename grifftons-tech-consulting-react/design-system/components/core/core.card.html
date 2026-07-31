@@ -1,0 +1,27 @@
+<!-- @dsCard group="Components" viewport="700x330" name="Core — Button, Text, Wordmark" subtitle="Round buttons in every variant, the three type roles, the name mark" -->
+<!doctype html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{box-sizing:border-box}body{margin:0;padding:26px 28px;background:var(--surface-page);font-family:var(--font-body)}.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.lbl{width:100%;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin:4px 0 -2px}</style></head>
+<body><div id="root"></div><script type="text/babel">const {Button,Text,Wordmark}=window.FableDesignSystem_270490;
+function App(){return <div style={{display:'flex',flexDirection:'column',gap:20}}>
+<div className="row"><div className="lbl">Button</div>
+<Button variant="primary" iconRight="→">Start a project</Button>
+<Button variant="accent">Book a call</Button>
+<Button variant="outline">Case study</Button>
+<Button variant="ghost">Skip</Button>
+<Button disabled>Unavailable</Button>
+<Button variant="link">See all writing</Button></div>
+<div className="row"><div className="lbl">Sizes &amp; inverse</div>
+<Button size="l">Large</Button><Button size="m">Medium</Button><Button size="s">Small</Button>
+<span style={{background:'var(--forest)',padding:'12px 16px',borderRadius:20,display:'inline-flex',gap:12}}>
+<Button variant="inverse">Inverse</Button><Button variant="accent" size="s">Accent</Button></span></div>
+<div className="row" style={{gap:34,alignItems:'flex-end'}}><div className="lbl">Text &amp; Wordmark</div>
+<Text type="display" sizing="S">Display S</Text>
+<Text type="body" sizing="M" color="var(--text-secondary)">Body M</Text>
+<Text type="label" sizing="M" color="var(--text-muted)">Label M</Text>
+<Wordmark size={26}/><Wordmark size={26} lockup/></div>
+</div>}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);</script></body></html>

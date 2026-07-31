@@ -1,0 +1,47 @@
+/* Questionnaire — only what inline token styles can't express:
+   the <summary> disclosure indicator and the native checkbox/radio/file controls. */
+
+.questionnaire-page summary {
+  list-style: none;
+}
+
+.questionnaire-page summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Typographic arrow as the disclosure indicator; rotates to point down when open. */
+.questionnaire-page summary::after {
+  content: '→';
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--text-muted);
+  transition: transform var(--motion-default) var(--ease-out);
+}
+
+.questionnaire-page details[open] > summary::after {
+  transform: rotate(90deg);
+}
+
+.questionnaire-page input[type='checkbox'],
+.questionnaire-page input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: var(--saffron-dark);
+}
+
+.questionnaire-page input[type='checkbox']:focus-visible,
+.questionnaire-page input[type='radio']:focus-visible,
+.questionnaire-page input[type='file']:focus-visible {
+  outline: 3px solid var(--saffron-light);
+  outline-offset: 2px;
+}
+
+.questionnaire-page input[type='file'] {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-secondary);
+}

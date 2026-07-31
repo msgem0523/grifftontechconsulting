@@ -1,0 +1,21 @@
+<!-- @dsCard group="Components" viewport="700x460" name="Content — ProjectCard, Card, Chip, Stat, Avatar, Quote" subtitle="Work tiles, surfaces, labels, numbers and pull quotes" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{box-sizing:border-box}body{margin:0;padding:26px 28px;background:var(--surface-page);font-family:var(--font-body)}.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.lbl{width:100%;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin:4px 0 -2px}</style></head>
+<body><div id="root"></div><script type="text/babel">const {ProjectCard,Card,Chip,Stat,Avatar,Quote}=window.FableDesignSystem_270490;
+function App(){return <div style={{display:'flex',flexDirection:'column',gap:26}}>
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:26}}>
+<ProjectCard client="Northwind Health" year="2025" title="Rebuilding intake for 400 clinics"
+  summary="A four-month engagement that cut the first-visit form from 38 fields to 9." tags={['Product design','Research']} imageTone="moss"/>
+<div style={{display:'flex',flexDirection:'column',gap:20}}>
+<Card tone="outline" pad={24}><div style={{display:'flex',gap:14,alignItems:'center'}}><Avatar size={52} initials="TG" tone="saffron"/>
+<Quote attribution="Dana Whitfield" role="VP Product" style={{}}><span style={{fontSize:20,lineHeight:'28px'}}>It just… worked.</span></Quote></div></Card>
+<div style={{display:'flex',gap:20}}><Stat value="41%" label="Fewer support tickets" tone="forest"/><Stat value="9" label="Fields, down from 38"/></div>
+</div></div>
+<div className="row"><div className="lbl">Chip</div>
+<Chip selected>All work</Chip><Chip tone="moss">Design systems</Chip><Chip tone="sky">Research</Chip><Chip tone="berry">Writing</Chip><Chip tone="saffron" size="s">2025</Chip></div>
+</div>}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);</script></body></html>

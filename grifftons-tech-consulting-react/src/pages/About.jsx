@@ -6,6 +6,7 @@ import { Section } from '../ds/components/layout/Section.jsx';
 import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { Card } from '../ds/components/content/Card.jsx';
+import Seo from '../components/Seo.jsx';
 
 const superpowers = [
     ['Veteran:', 'Brought discipline and problem-solving from the Air Force.'],
@@ -19,9 +20,13 @@ function About() {
 
     return (
         <div className="about-page">
+            <Seo 
+                title="About | Griffton's Tech Consulting" 
+                description="Learn about Griffton's Tech Consulting and our mission to build practical, approachable technology solutions for small businesses."
+            />
             <Section pad="large" className="reveal">
                 <Text type="label" sizing="M" color="var(--text-muted)">The team</Text>
-                <Text type="display" sizing="L" as="h1" style={{ marginTop: 16 }}>Meet the founders</Text>
+                <Text type="display" sizing="L" as="h1" style={{ marginTop: 16 }}>Meet the founder</Text>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'flex-start', marginTop: 48 }}>
                     <div
@@ -68,12 +73,6 @@ function About() {
                     </div>
                 </div>
 
-                <Card tone="raised" style={{ marginTop: 48, maxWidth: 420 }}>
-                    <Text type="display" sizing="S" as="h2">Cameron Griffin</Text>
-                    <Text type="label" sizing="M" color="var(--text-muted)" style={{ marginTop: 10 }}>
-                        Technical consultant
-                    </Text>
-                </Card>
             </Section>
         </div>
     );

@@ -4,6 +4,7 @@ import { Section } from '../ds/components/layout/Section.jsx';
 import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { Input } from '../ds/components/forms/Input.jsx';
+import Seo from '../components/Seo.jsx';
 import '../styles/questionnaire.css';
 
 // Style vocabulary for the pieces the system has no component for:
@@ -82,6 +83,10 @@ function Questionnaire() {
 
     return (
         <div className="questionnaire-page">
+            <Seo
+                title="Website Discovery Questionnaire / Griffton's Tech Consulting"
+                description="Tell us about your project by completing our website questionnaire so we can recommend the best solution for your business."
+            />
             <Section tone="page" width="prose" pad="default" className="reveal">
                 <Text type="display" sizing="L" as="h1">
                     Website discovery questionnaire

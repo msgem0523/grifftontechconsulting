@@ -6,6 +6,7 @@ import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { Card } from '../ds/components/content/Card.jsx';
 import { Chip } from '../ds/components/content/Chip.jsx';
+import Seo from '../components/Seo.jsx';
 
 const useCases = [
     ['Event registration', 'Send guests to one page for event details, sign-up forms, schedules, and location info.'],
@@ -28,6 +29,10 @@ function QrPages() {
     return (
         <div className="qr-page">
             <Section pad="large" className="reveal">
+                <Seo
+                    title="QR Pages / Griffton's Tech Consulting"
+                    description="Connect customers instantly with mobile-friendly QR landing pages for menus, promotions, events, and business information."
+                />
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 64, alignItems: 'start' }}>
                     <div>
                         <Text type="label" sizing="M" color="var(--text-muted)">QR pages</Text>

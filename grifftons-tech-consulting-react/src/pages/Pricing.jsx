@@ -5,6 +5,7 @@ import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { Card } from '../ds/components/content/Card.jsx';
 import { Chip } from '../ds/components/content/Chip.jsx';
+import Seo from '../components/Seo.jsx';
 
 function scrollToId(id) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -134,6 +135,10 @@ function Pricing() {
 
   return (
     <div className="pricing-page">
+      <Seo
+        title="Pricing | Griffton's Tech Consulting"
+        description="Explore transparent pricing for websites, landing pages, QR pages, and technology services tailored to small businesses."
+      />
 
       {/* Hero */}
       <Section pad="default" className="reveal">

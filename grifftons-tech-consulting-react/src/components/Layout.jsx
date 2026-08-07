@@ -8,6 +8,11 @@ const NAV_ITEMS = [
   { id: '/', label: 'Home' },
   { id: '/about', label: 'About' },
   { id: '/pricing', label: 'Pricing' },
+  { id: '/business-websites', label: 'Business Websites' },
+  { id: '/landing-pages', label: 'Landing Pages' },
+  { id: '/qr-pages', label: 'QR Pages' },
+  { id: '/tech-support', label: 'Tech Support' },
+  { id: '/questionnaire', label: 'Questionnaire' },
 ];
 
 function Layout() {

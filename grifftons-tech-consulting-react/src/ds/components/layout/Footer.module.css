@@ -1,0 +1,27 @@
+.footer {
+  margin: 0 var(--page-gutter) var(--page-gutter);
+  padding: 72px 48px 40px;
+  background: var(--forest);
+  border-radius: var(--radius-l);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1080px;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 48px 24px 32px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    padding-inline: 18px;
+  }
+}

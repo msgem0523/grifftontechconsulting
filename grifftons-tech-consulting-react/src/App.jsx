@@ -8,6 +8,7 @@ import LandingPages from './pages/LandingPages';
 import QrPages from './pages/QrPages';
 import TechSupport from './pages/TechSupport';
 import Pricing from './pages/Pricing';
+import Contact from './pages/Contact';
 import Questionnaire from './pages/Questionnaire';
 import TeMechaResume from './pages/resume/TeMechaResume';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/tech-support" element={<TechSupport />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/questionnaire" element={<Questionnaire />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/resume/temecha" element={<TeMechaResume />} />
         </Route>
       </Routes>

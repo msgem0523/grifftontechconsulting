@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { id: '/', label: 'Home' },
   { id: '/about', label: 'About' },
   { id: '/pricing', label: 'Pricing' },
+  { id: '/contact', label: 'Contact' },
 ];
 
 function Layout() {
@@ -30,7 +31,6 @@ function Layout() {
         homeId="/"
         onNavigate={(id) => navigate(id)}
         action={<Button size="s" onClick={() => navigate('/#contact')}>Start a project</Button>}
-        style={{ flexWrap: 'wrap' }}
       />
       <main>
         <Outlet />

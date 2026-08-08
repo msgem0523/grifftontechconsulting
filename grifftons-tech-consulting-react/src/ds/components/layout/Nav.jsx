@@ -1,57 +1,98 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Wordmark } from '../core/Wordmark.jsx';
+import styles from './Nav.module.css';
 
 export function Nav({
-  items=[],
+  items = [],
   active,
   onNavigate,
   action,
-  tone='page',
-  homeId='home',
+  tone = 'page',
+  homeId = 'home',
   style,
   ...rest
-}){
-  const inverse=tone==='inverse';
-  return <nav 
-    style={{
-      position:'sticky',
-      top:0,
-      zIndex:40,
-      display:'flex',
-      alignItems:'center',
-      gap:'48px',
-      padding:'22px var(--page-gutter)',
-      background:inverse?'var(--forest)':'var(--pearl)',
-      color:inverse?'var(--white)':'var(--ink)',
-      ...style}} {...rest}>
-    <a href="#" onClick={e=>{e.preventDefault();onNavigate&&onNavigate(homeId)}} style={{boxShadow:'none'}}>
-      <Wordmark size={22} tone={inverse?'inverse':'ink'}/>
-    </a>
-    <div 
-      style={{
-        display:'flex',
-        gap:'30px',
-        flex:1
-      }}
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const inverse = tone === 'inverse';
+
+  const handleNavigate = (id) => {
+    onNavigate?.(id);
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, []);
+
+  return (
+    <nav
+      className={`${styles.nav} ${inverse ? styles.inverse : ''}`}
+      style={style}
+      aria-label="Main navigation"
+      {...rest}
     >
-      {items.map(it=>{
-        const on=active===it.id;
-        return <a key={it.id} href="#" onClick={e=>{e.preventDefault();onNavigate&&onNavigate(it.id)}}
-          style={{
-            fontFamily:'var(--font-body)',
-            fontSize:15,
-            letterSpacing:'-0.2px',
-            fontWeight:500,
-            color:inverse?(on?'var(--white)':'var(--white-70)'):(on?'var(--ink)':'var(--text-muted)'),
-            boxShadow:on?'inset 0 -2px 0 var(--saffron)':'none',
-            paddingBottom:2,
-            transition:'var(--transition-interactive)'
-          }}
-        >
-          {it.label}
-        </a>;
-      })}
-    </div>
-    {action}
-  </nav>;
+      <a
+        href="#"
+        className={styles.wordmark}
+        onClick={(event) => {
+          event.preventDefault();
+          handleNavigate(homeId);
+        }}
+      >
+        <Wordmark size={22} tone={inverse ? 'inverse' : 'ink'} />
+      </a>
+
+      <button
+        type="button"
+        className={styles.navToggle}
+        aria-label="Toggle navigation menu"
+        aria-expanded={isOpen}
+        aria-controls="primary-navigation"
+        onClick={() => setIsOpen((current) => !current)}
+      >
+        <span aria-hidden="true">{isOpen ? '✕' : '☰'}</span>
+      </button>
+
+      <div
+        id="primary-navigation"
+        className={`${styles.menu} ${isOpen ? styles.open : ''}`}
+      >
+        <div className={styles.navLinks}>
+          {items.map((item) => {
+            const isActive = active === item.id;
+
+            return (
+              <a
+                key={item.id}
+                href="#"
+                className={isActive ? styles.active : ''}
+                onClick={(event) => {
+                  event.preventDefault();
+                  handleNavigate(item.id);
+                }}
+              >
+                {item.label}
+              </a>
+            );
+          })}
+        </div>
+
+        {action && (
+          <div className={styles.action} onClick={() => setIsOpen(false)}>
+            {action}
+          </div>
+        )}
+      </div>
+    </nav>
+  );
 }

@@ -35,7 +35,6 @@ function Layout() {
         homeId="/"
         onNavigate={(id) => navigate(id)}
         action={<Button size="s" onClick={() => navigate('/#contact')}>Start a project</Button>}
-        style={{ flexWrap: 'wrap' }}
       />
       <main>
         <Outlet />

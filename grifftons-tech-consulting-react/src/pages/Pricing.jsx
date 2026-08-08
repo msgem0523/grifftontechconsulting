@@ -143,8 +143,18 @@ function Pricing() {
       {/* Hero */}
       <Section pad="default" className="reveal">
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'flex-start' }}>
-          <div style={{ flex: '1 1 480px' }}>
-            <Chip tone="saffron">Accepting a limited number of projects this month</Chip>
+          <div 
+            style={{
+              flex: '1 1 480px',
+              minWidth: 0,
+              width: '100%',
+            }}
+          >
+            <div style={{ maxWidth: '100%', overflowWrap: 'anywhere' }}>
+              <Chip tone="saffron" wrap>
+                Accepting a limited number of projects this month
+              </Chip>
+            </div>
             <Text type="label" sizing="M" color="var(--text-muted)" style={{ marginTop: 28 }}>
               Work with me
             </Text>
@@ -172,7 +182,7 @@ function Pricing() {
               make it calm, clear, and completely you.
             </Text>
           </div>
-          <Card style={{ flex: '1 1 300px' }}>
+          <Card style={{ flex: '1 1 300px', minWidth: 0, width: '100%' }}>
             <Text type="display" sizing="XS" as="h3">This is for you if…</Text>
             <Text type="body" sizing="M" color="var(--text-secondary)" style={{ marginTop: 12 }}>
               You’re ready to stop saying “ignore my link-in-bio” and start
@@ -200,7 +210,7 @@ function Pricing() {
           title="You don’t have to be “techy” to have a smooth online experience."
           intro="If you can send screenshots and links, we can work together. Here are some of the people I had in mind when I built these packages:"
         />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 24 }}>
           {whoCards.map((who) => (
             <Card key={who.title}>
               <Text type="display" sizing="XS" as="h3">{who.title}</Text>
@@ -224,7 +234,7 @@ function Pricing() {
             </Text>
           )}
         />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24, alignItems: 'stretch' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 24, alignItems: 'stretch' }}>
           {tiers.map((tier) => <PriceCard key={tier.name} tier={tier} />)}
         </div>
       </Section>
@@ -236,7 +246,7 @@ function Pricing() {
           title="I keep the process simple so you don’t get overwhelmed."
           intro="You don’t have to write a novel or know “website words.” We’ll move step by step:"
         />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: 24 }}>
           {steps.map((step) => (
             <Card key={step.n} tone="outline">
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
@@ -274,7 +284,7 @@ function Pricing() {
         </Text>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 12, marginTop: 56, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
           <Text type="body" sizing="S" color="var(--text-muted)">
-            © 2025 Griffton Landing Studio · Landing pages with heart & strategy
+            © {new Date().getFullYear()} Griffton Landing Studio · Landing pages with heart & strategy
           </Text>
           <Text type="body" sizing="S" color="var(--text-muted)">
             Already have a site and just need help structuring it?{' '}

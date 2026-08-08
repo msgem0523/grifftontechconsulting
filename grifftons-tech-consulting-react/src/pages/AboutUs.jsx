@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import TeMecha from './resume/TeMechaResume';
 
@@ -24,3 +25,4 @@ function AboutUs() {
 }
 
 export default AboutUs;
+*/

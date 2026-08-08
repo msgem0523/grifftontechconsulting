@@ -6,6 +6,7 @@ import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { Card } from '../ds/components/content/Card.jsx';
 import { Stat } from '../ds/components/content/Stat.jsx';
+import Seo from '../components/Seo.jsx';
 
 const included = [
     ['Responsive design', 'Our websites are designed to look great on all devices, ensuring a seamless user experience for your visitors to work across phones, tablets, and desktop screens.'],
@@ -27,6 +28,10 @@ function BusinessWebsites() {
 
     return (
         <div className="business-page">
+            <Seo
+                title="Business Websites / Griffton's Tech Consulting"
+                description="Professional business websites designed to build trust, attract customers, and help your company grow online."
+            />
             <Section pad="large" className="reveal">
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 64, alignItems: 'start' }}>
                     <div>

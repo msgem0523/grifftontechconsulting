@@ -6,6 +6,7 @@ import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { Card } from '../ds/components/content/Card.jsx';
 import { Stat } from '../ds/components/content/Stat.jsx';
+import Seo from '../components/Seo.jsx';
 
 const helpCards = [
     ['Website issues', 'We can help with website troubleshooting, broken links, form issues, layout problems, missing content, mobile display issues, and basic page updates.'],
@@ -22,6 +23,10 @@ function TechSupport() {
     return (
         <div className="support-page">
             <Section pad="large" className="reveal">
+                <Seo
+                    title="Tech Support / Griffton's Tech Consulting"
+                    description="Reliable technical support, troubleshooting, website updates, and technology assistance for small businesses."
+                />
                 <Text type="label" sizing="M" color="var(--text-muted)">Tech support</Text>
                 <Text type="display" sizing="XL" as="h1" style={{ marginTop: 28, maxWidth: '22ch' }}>
                     Friendly, practical tech help when your website or tools start acting brand new.

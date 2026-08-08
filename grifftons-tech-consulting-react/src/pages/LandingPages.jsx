@@ -5,6 +5,7 @@ import { Section } from '../ds/components/layout/Section.jsx';
 import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { ProjectCard } from '../ds/components/content/ProjectCard.jsx';
+import Seo from '../components/Seo.jsx';
 
 const templates = [
     {
@@ -33,6 +34,10 @@ function LandingPages() {
     return (
         <div className="landing-page">
             <Section className="reveal" pad="default">
+                <Seo
+                    title="Landing Page Templates / Griffton's Tech Consulting"
+                    description="High-converting landing pages built to generate leads, promote services, and increase customer engagement."
+                />
                 <Text type="display" sizing="XXL" as="h1">Landing page templates</Text>
                 <Text type="body" sizing="XL" measure color="var(--text-secondary)" style={{ marginTop: 24 }}>
                     Pick a style, then we customize it to match your brand and goals.

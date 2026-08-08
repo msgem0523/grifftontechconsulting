@@ -3,6 +3,7 @@ import { Section, SectionHead } from '../ds/components/layout/Section.jsx';
 import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { Card } from '../ds/components/content/Card.jsx';
+import Seo from '../components/Seo.jsx';
 
 const inputStyles = {
   display: 'block',
@@ -65,7 +66,12 @@ function Contact() {
   }
 
   return (
-    <Section pad="default">
+    <>
+      <Seo
+        title="Contact | Griffton's Tech Consulting"
+        description="Get in touch with Griffton's Tech Consulting to discuss your website, landing page, QR page, or tech support needs."
+      />
+      <Section pad="default">
       <SectionHead
         label="Contact"
         title="Let’s talk about what you need."
@@ -158,7 +164,8 @@ function Contact() {
           </Text>
         </form>
       </Card>
-    </Section>
+      </Section>
+    </>
   );
 }
 

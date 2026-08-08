@@ -8,6 +8,7 @@ import { Card } from '../ds/components/content/Card.jsx';
 import { Chip } from '../ds/components/content/Chip.jsx';
 import { ProjectCard } from '../ds/components/content/ProjectCard.jsx';
 import { Input } from '../ds/components/forms/Input.jsx';
+import Seo from '../components/Seo.jsx';
 
 const TRUST = ['Mobile-first', 'Fast delivery', 'Easy to maintain'];
 const CHECKLIST = ['Landing pages', 'Portfolio sites', 'QR pages', 'Fixes & updates'];
@@ -110,6 +111,7 @@ function Home() {
 
   return (
     <div className="home-page">
+      <Seo title="Website & Tech Support | Griffton's Tech Consulting" description="Custom websites, landing pages, QR pages, and practical tech support for small businesses that need simple reliable digital solutions." />
       <Section pad="large">
         <Text type="label" sizing="M" color="var(--text-muted)">Web · Automation · Support</Text>
         <Text type="display" sizing="XL" as="h1" style={{ marginTop: 28, maxWidth: '20ch' }}>

@@ -15,6 +15,29 @@ const NAV_ITEMS = [
   { id: '/questionnaire', label: 'Questionnaire' },
 ];
 
+const FOOTER_COLUMNS = [
+  {
+    title: 'Contact',
+    items: [
+      <a href="mailto:msgem0523@gmail.com">Email</a>,
+      <a
+        href="https://www.linkedin.com/in/temecha-griffin/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>,
+      <a
+        href="https://www.github.com/msgem0523"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>,
+    ]
+  }
+];
+
 function Layout() {
   const { pathname, hash } = useLocation();
   const navigate = useNavigate();
@@ -39,7 +62,10 @@ function Layout() {
       <main>
         <Outlet />
       </main>
-      <Footer note={`© ${new Date().getFullYear()} Griffton's Tech Consulting`} />
+      <Footer 
+        columns={FOOTER_COLUMNS}
+        note={`© ${new Date().getFullYear()} Griffton's Tech Consulting`} 
+      />
     </>
   );
 }

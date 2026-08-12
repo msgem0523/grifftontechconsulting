@@ -37,11 +37,18 @@ export function Footer({
               color:'var(--white-50)',
               marginBottom:14
             }}>{c.title}</div>
-            {c.items.map(i=><div key={i} style={{
-              fontSize:15,
-              lineHeight:'28px',
-              color:'var(--white-70)'
-            }}>{i}</div>)}
+            {c.items.map((item, index) => (
+              <div
+                key={`${c.title}-${index}`}
+                style={{
+                  fontSize:15,
+                  lineHeight: '28px',
+                  color: 'var(--white-70)'
+                }}
+              >
+                {item}
+              </div>
+            ))}
           </div>)}
         </div>
         <div style={{

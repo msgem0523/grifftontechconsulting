@@ -14,3 +14,9 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 GRIFFTON'S TECH CONSULTING
+
+## Shared Layout
+
+The site uses a shared React Router `Layout` component to provide consistent navigation and footer content across all routes. The design-system `Nav` and `Footer` components wrap the route `<Outlet />`, allowing shared site elements to be maintained in one place rather than duplicated across individual pages.
+
+The shared footer includes contact links for email, LinkedIn, and GitHub so visitors can access contact information from every page.

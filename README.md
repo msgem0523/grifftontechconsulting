@@ -2,7 +2,7 @@
 
 Griffton’s Tech Consulting is a technology consulting venture focused on building clean, modern, and scalable digital solutions for individuals, small businesses, and growing brands.
 
-This site serves as the official web presence for Griffton’s Tech Consulting and showcases services, branding, and future offerings.
+This project is being developed as the official web presence for Griffton’s Tech Consulting and will showcase services, branding, projects, and future offerings.
 
 ---
 
@@ -20,47 +20,41 @@ We focus on **clarity, usability, and long-term growth**—not over-engineered f
 
 ## 🛠️ Tech Stack
 
-This website is built using:
+The current React application is built using:
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- (Frameworks/libraries may be added as the project evolves)
+- React
+- Vite
+- React Router
+- JavaScript
+- CSS
 
-The structure is intentionally lightweight and flexible to allow for future expansion.
+The original static HTML/CSS/JavaScript implementation was discontinued in favor of React. React is the chosen architecture for continued development and future deployment.
 
 ---
 
 ## 📂 Project Structure
 
-This repository contains multiple project directories.  
-⚠️ **The live Griffton’s Tech Consulting website pulls from the `-site` directory, not the React project.**
+The active application is located in the React project directory.
+
+⚠️ **Griffton’s Tech Consulting is not currently deployed. The React application is the active implementation being prepared for production deployment.**
 
 /griffton-tech-consulting
 │
-├── grifftontechconsulting-site/ # ✅ Active production site
-│ ├── index.html
-│ ├── css/
-│ │ ├── base.css
-│ │ └── styles.css
-│ ├── assets/
-│ │ ├── images/
-│ │ └── icons/
-│ └── README.md
-│
-├── grifftontechconsulting-react/ # ⚙️ Experimental / future React build
-│ ├── src/
-│ ├── public/
-│ └── package.json
+├── grifftons-tech-consulting-react/ # 🚀 Active React application
+│   ├── .github/
+│   ├── design-system/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── README.md
 │
 └── README.md
 
-
-**Notes:**
-- The `grifftontechconsulting-site` folder is the **primary source** for the live site.
-- The `grifftontechconsulting-react` folder is reserved for future expansion and experimentation.
-- Only the `-site` directory should be referenced for deployment unless otherwise noted.
-
+**Migration decision:**
+- The original static HTML/CSS/JavaScript implementation was discontinued in favor of React.
+- The React application is the active implementation of Griffton’s Tech Consulting and the chosen architecture for continued development.
+- All new development will target the React application.
+- **Deployment target:** The React application will be prepared for its first production deployment once the core portfolio experience is complete and passes production-readiness checks.
 
 *(Structure may evolve as features and services expand.)*
 
@@ -70,20 +64,17 @@ This repository contains multiple project directories.
 
 🚧 **In Active Development**
 
-Planned enhancements include:
-- Service pages
-- Portfolio showcase
-- Contact and inquiry forms
-- Landing page templates
-- Client onboarding workflows
+The React application is being prepared for its first production deployment. Current development focuses on completing the core portfolio experience, validating responsive and accessible behavior, and ensuring the application is production-ready.
+
+Future enhancements will continue to be tracked through GitHub Issues.
 
 ---
 
-## 🤝 Collaboration
+## 👩🏾‍💻 Maintainer
 
-This project is co-created and maintained by:
-- **TeMecha Griffin** – Software Developer  
-- **Cameron Griffin** – Technical Consultant  
+This project is created and maintained by:
+
+- **TeMecha Griffin** – Software Developer   
 
 ---
 

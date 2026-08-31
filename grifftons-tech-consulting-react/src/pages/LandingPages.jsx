@@ -38,12 +38,18 @@ function LandingPages() {
                     title="Landing Page Templates / Griffton's Tech Consulting"
                     description="High-converting landing pages built to generate leads, promote services, and increase customer engagement."
                 />
+
                 <Text type="display" sizing="XXL" as="h1">Landing page templates</Text>
+
                 <Text type="body" sizing="XL" measure color="var(--text-secondary)" style={{ marginTop: 24 }}>
                     Pick a style, then we customize it to match your brand and goals.
                 </Text>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '64px 48px', marginTop: 64 }}>
+                <Text type="display" sizing="M" as="h2" style={{ marginTop: 64 }}>
+                    Choose a template
+                </Text>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '64px 48px', marginTop: 32 }}>
                     {templates.map((t) => (
                         <div key={t.title}>
                             <ProjectCard

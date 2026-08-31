@@ -215,6 +215,10 @@ function Home() {
         />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 48, alignItems: 'start' }}>
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+            <Text type="body" sizing="S" color="var(--text-secondary)">
+              Fields marked * are required.
+            </Text>
+
             <Input
               label="Name"
               type="text"

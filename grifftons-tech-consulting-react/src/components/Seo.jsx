@@ -1,19 +1,37 @@
 import { useEffect } from "react";
 
-function Seo({ title, description }) {
+function Seo({ title, description, image = "/og-image.png" }) {
   useEffect(() => {
     document.title = title;
 
-    let metaDescription = document.querySelector('meta[name="description"]');
+    const upsertMeta = (attribute, key, content) => {
+      let meta = document.querySelector(`meta[${attribute}="${key}"]`);
 
-    if(!metaDescription) {
-      metaDescription = document.createElement("meta");
-      metaDescription.setAttribute("name", "description");
-      document.head.appendChild(metaDescription);
-    }
+      if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute(attribute, key);
+        document.head.appendChild(meta);
+      }
 
-    metaDescription.setAttribute("content", description);
-  }, [title, description]);
+      meta.setAttribute("content", content);
+    };
+
+    const pageUrl = window.location.href;
+    const imageUrl = new URL(image, window.location.origin).href;
+
+    upsertMeta("name", "description", description);
+
+    upsertMeta("property", "og:title", title);
+    upsertMeta("property", "og:description", description);
+    upsertMeta("property", "og:image", imageUrl);
+    upsertMeta("property", "og:url", pageUrl);
+    upsertMeta("property", "og:type", "website");
+
+    upsertMeta("name", "twitter:card", "summary_large_image");
+    upsertMeta("name", "twitter:title", title);
+    upsertMeta("name", "twitter:description", description);
+    upsertMeta("name", "twitter:image", imageUrl);
+  }, [title, description, image]);
 
   return null;
 }

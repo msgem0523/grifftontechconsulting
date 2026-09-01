@@ -51,7 +51,7 @@ const PROJECTS = [
     title: 'GrowthGuard',
     tone: 'sky',
     summary:
-      "A pediatric health tracking application designed to help parents manage children's medical history, milestones, and growth data in one place.",
+      "Centralized children's medical records, milestones, and growth tracking into one full-stack application, giving parents one place to manage pediatric health information.",
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
     code: 'https://github.com/msgem0523/capstonefrontend',
   },
@@ -59,7 +59,7 @@ const PROJECTS = [
     title: 'As We Grow Application App',
     tone: 'berry',
     summary:
-      'A community-focused event registration with Firebase backend and QR code integration for streamlined check-in and data collection.',
+      'Replaced manual paper sign-in sheets with QR-code event registration and check-in, sending attendee data directly to Firebase for centralized, real-time access.',
     tags: ['React', 'Firebase', 'QR Code Integration'],
     code: 'https://github.com/msgem0523/aswegrow',
   },
@@ -67,7 +67,7 @@ const PROJECTS = [
     title: "Griffton's Tech Consulting site",
     tone: 'moss',
     summary:
-      'A multi-page business website showcasing landing page templates, service offerings, and pricing for small business clients.',
+      'Turned web design services into a self-service client experience with transparent pricing, interactive template demos, and direct project inquiries.',
     tags: ['HTML', 'CSS'],
     code: '#',
   },

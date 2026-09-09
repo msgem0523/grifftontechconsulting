@@ -1,68 +1,83 @@
 # Griffton’s Tech Consulting 💻✨
 
-Griffton’s Tech Consulting is a technology consulting venture focused on building clean, modern, and scalable digital solutions for individuals, small businesses, and growing brands.
+Griffton’s Tech Consulting is a technology consulting venture focused on building clean, modern, accessible, and scalable digital solutions for individuals, small businesses, and growing brands.
 
-This site serves as the official web presence for Griffton’s Tech Consulting and showcases services, branding, and future offerings.
+This repository contains the React-based website for Griffton’s Tech Consulting and serves as an active development project for building reusable components, responsive experiences, accessible interfaces, and maintainable frontend architecture.
 
 ---
 
 ## 🚀 Purpose
 
 Our mission is to help clients:
-- Establish a strong digital presence  
-- Simplify technology decisions  
-- Launch clean, functional, and user-friendly websites  
-- Bridge the gap between ideas and execution  
 
-We focus on **clarity, usability, and long-term growth**—not over-engineered fluff.
+- Establish a strong digital presence
+- Simplify technology decisions
+- Launch clean, functional, and user-friendly websites
+- Bridge the gap between ideas and execution
+
+We focus on **clarity, usability, accessibility, and long-term growth** — not over-engineered solutions.
 
 ---
 
 ## 🛠️ Tech Stack
 
-This website is built using:
+The current website is built with:
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- (Frameworks/libraries may be added as the project evolves)
+- React
+- Vite
+- React Router
+- JavaScript
+- HTML5
+- CSS3
+- Git & GitHub
 
-The structure is intentionally lightweight and flexible to allow for future expansion.
+Development follows a GitHub-based workflow using issues, feature branches, pull requests, and incremental improvements.
+
+---
+
+## ✨ Features
+
+The site currently includes:
+
+- Shared navigation and footer components
+- Responsive layouts and mobile navigation
+- Reusable design-system components
+- Client-side routing with React Router
+- Contact form interactions
+- SEO titles and meta descriptions
+- Open Graph and Twitter social metadata
+- Social media links
+- Favicon and application icon support
+- Accessibility-focused interface improvements
+
+---
+
+## 🏗️ Architecture
+
+The site uses a shared React layout to provide consistent navigation and footer content across application routes.
+
+Reusable components and design-system patterns are used to keep interface behavior and styling consistent as the site grows.
+
+The application is developed with Vite and organized around reusable React components, page-level routes, shared layouts, and modular styling.
 
 ---
 
 ## 📂 Project Structure
 
-This repository contains multiple project directories.  
-⚠️ **The live Griffton’s Tech Consulting website pulls from the `-site` directory, not the React project.**
+The active React application is located in:
 
-/griffton-tech-consulting
-│
-├── grifftontechconsulting-site/ # ✅ Active production site
-│ ├── index.html
-│ ├── css/
-│ │ ├── base.css
-│ │ └── styles.css
-│ ├── assets/
-│ │ ├── images/
-│ │ └── icons/
-│ └── README.md
-│
-├── grifftontechconsulting-react/ # ⚙️ Experimental / future React build
-│ ├── src/
-│ ├── public/
-│ └── package.json
-│
+```text
+grifftons-tech-consulting-react/
+├── public/
+├── src/
+│   ├── components/
+│   ├── ds/
+│   └── pages/
+├── package.json
 └── README.md
+```
 
-
-**Notes:**
-- The `grifftontechconsulting-site` folder is the **primary source** for the live site.
-- The `grifftontechconsulting-react` folder is reserved for future expansion and experimentation.
-- Only the `-site` directory should be referenced for deployment unless otherwise noted.
-
-
-*(Structure may evolve as features and services expand.)*
+The repository may also contain supporting project documentation and historical development artifacts.
 
 ---
 
@@ -70,20 +85,35 @@ This repository contains multiple project directories.
 
 🚧 **In Active Development**
 
-Planned enhancements include:
-- Service pages
-- Portfolio showcase
-- Contact and inquiry forms
-- Landing page templates
-- Client onboarding workflows
+Recent improvements include:
+
+- Migrated the website to React and Vite
+- Implemented shared site navigation and footer architecture
+- Added responsive mobile navigation and site interactions
+- Improved page titles and SEO metadata
+- Added Open Graph and Twitter social metadata
+- Added social links and favicon support
+- Improved reusable component and design-system patterns
+
+Ongoing work focuses on:
+
+- Accessibility
+- Responsive behavior
+- Component refinement
+- Content and service pages
+- Portfolio presentation
+- Deployment readiness
+- Overall user experience
+
+Development work is tracked through GitHub issues and pull requests.
 
 ---
 
 ## 🤝 Collaboration
 
-This project is co-created and maintained by:
-- **TeMecha Griffin** – Software Developer  
-- **Cameron Griffin** – Technical Consultant  
+This project is created and maintained by:
+
+- **TeMecha Griffin** — Software Developer
 
 ---
 
@@ -91,11 +121,12 @@ This project is co-created and maintained by:
 
 For inquiries, collaborations, or consultations:
 
-📧 Email: **msgem0523@gmail.com**
+📧 msgem0523@gmail.com
 
 ---
 
 ## 📜 License
 
-This project is proprietary and owned by Griffton’s Tech Consulting.  
+This project is proprietary and owned by Griffton’s Tech Consulting.
+
 All rights reserved.

@@ -11,6 +11,7 @@ import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import Questionnaire from './pages/Questionnaire';
 import TeMechaResume from './pages/resume/TeMechaResume';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/questionnaire" element={<Questionnaire />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume/temecha" element={<TeMechaResume />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>

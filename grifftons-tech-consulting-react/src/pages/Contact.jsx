@@ -4,6 +4,7 @@ import { Text } from '../ds/components/core/Text.jsx';
 import { Button } from '../ds/components/core/Button.jsx';
 import { Card } from '../ds/components/content/Card.jsx';
 import Seo from '../components/Seo.jsx';
+import { CONTACT } from '../lib/contact';
 
 const inputStyles = {
   display: 'block',
@@ -58,7 +59,7 @@ function Contact() {
     setStatus('Your email app is opening with your message ready to send.');
 
     window.location.href =
-      `mailto:msgem0523@gmail.com?subject=${subject}&body=${body}`;
+      `mailto:${CONTACT.email}?subject=${subject}&body=${body}`;
 
       setTimeout(() => {
         form.reset();

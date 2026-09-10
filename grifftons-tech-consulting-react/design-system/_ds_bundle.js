@@ -944,7 +944,7 @@ function Footer({
       marginTop: 56
     }
   }, columns.map(c => /*#__PURE__*/React.createElement("div", {
-    key: c.title
+    key: `${c.title}:${c.items.map(item => typeof item === 'object' ? item.href : item).join('|')}`
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-body)',
@@ -955,14 +955,28 @@ function Footer({
       color: 'var(--white-50)',
       marginBottom: 14
     }
-  }, c.title), c.items.map(i => /*#__PURE__*/React.createElement("div", {
-    key: i,
+  }, c.title), /*#__PURE__*/React.createElement("ul", {
     style: {
-      fontSize: 15,
-      lineHeight: '28px',
-      color: 'var(--white-70)'
+      listStyle: 'none',
+      margin: 0,
+      padding: 0
     }
-  }, i))))), /*#__PURE__*/React.createElement("div", {
+  }, c.items.map(item => {
+    const isLink = typeof item === 'object' && item !== null && item.href;
+    const key = isLink ? item.href : item;
+    return /*#__PURE__*/React.createElement("li", {
+      key: key,
+      style: {
+        fontSize: 15,
+        lineHeight: '28px',
+        color: 'var(--white-70)'
+      }
+    }, isLink ? /*#__PURE__*/React.createElement("a", {
+      href: item.href,
+      target: item.external ? '_blank' : undefined,
+      rel: item.external ? 'noopener noreferrer' : undefined
+    }, item.label, item.external ? ' ↗' : '') : item);
+  })))), /*#__PURE__*/React.createElement("div", {
     style: {
       marginTop: 64,
       paddingTop: 22,
@@ -970,7 +984,7 @@ function Footer({
       fontSize: 13,
       color: 'var(--white-50)'
     }
-  }, note || '© ' + new Date().getFullYear() + ' Temecha Griffin')));
+  }, note || '© ' + new Date().getFullYear() + ' Temecha Griffin'))))
 }
 Object.assign(__ds_scope, { Footer });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/layout/Footer.jsx", error: String((e && e.message) || e) }); }

@@ -262,36 +262,6 @@ function Pricing() {
         </div>
       </Section>
 
-      {/* Contact / CTA */}
-      <Section pad="tight" id="contact" className="reveal">
-        <Text type="display" sizing="M" as="h2">Ready to get started or have questions?</Text>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 28 }}>
-          <Card tone="outline" pad={20}>
-            <Text type="body" sizing="M">
-              Email: <a href="mailto:msgem0523@gmail.com">msgem0523@gmail.com</a>
-            </Text>
-          </Card>
-          <Card tone="outline" pad={20}>
-            <Text type="body" sizing="M">
-              Instagram: <a href="https://instagram.com/msgem0523thecoder" target="_blank" rel="noreferrer">@msgem0523thecoder</a>
-            </Text>
-          </Card>
-        </div>
-        <Text type="body" sizing="M" color="var(--text-secondary)" measure style={{ marginTop: 24 }}>
-          When you reach out, share your name, business type, and which package
-          you’re interested in. If you’ve worked with me for Tea Talk before,
-          feel free to mention that too — I already know your vibe.
-        </Text>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 12, marginTop: 56, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
-          <Text type="body" sizing="S" color="var(--text-muted)">
-            © {new Date().getFullYear()} Griffton Landing Studio · Landing pages with heart & strategy
-          </Text>
-          <Text type="body" sizing="S" color="var(--text-muted)">
-            Already have a site and just need help structuring it?{' '}
-            <a href="mailto:msgem0523@gmail.com">Ask about custom support.</a>
-          </Text>
-        </div>
-      </Section>
     </div>
   );
 }

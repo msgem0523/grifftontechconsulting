@@ -27,22 +27,50 @@ export function Footer({
           gap:32,
           marginTop:56
         }}>
-          {columns.map(c=><div key={c.title}>
-            <div style={{
-              fontFamily:'var(--font-body)',
-              fontSize:11,
-              letterSpacing:'.1em',
-              textTransform:'uppercase',
-              fontWeight:500,
-              color:'var(--white-50)',
-              marginBottom:14
-            }}>{c.title}</div>
-            {c.items.map(i=><div key={i} style={{
-              fontSize:15,
-              lineHeight:'28px',
-              color:'var(--white-70)'
-            }}>{i}</div>)}
-          </div>)}
+          {columns.map((c) => (
+            <div
+              key={`${c.title}:${c.items
+                .map((item) => (typeof item === 'object' ? item.href : item))
+                .join('|')}`}
+            >
+              <div
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 11,
+                  letterSpacing: '.1em',
+                  textTransform: 'uppercase',
+                  fontWeight: 500,
+                  color: 'var(--white-50)',
+                  marginBottom: 14
+                }}
+              >
+                {c.title}
+              </div>
+            <ul className={styles.itemList}>
+              {c.items.map((item) => {
+                const isLink = typeof item === 'object' && item !== null && item.href;
+                const key = isLink ? item.href : item;
+
+                return (
+                  <li key={key} className={styles.item}>
+                    {isLink ? (
+                      <a
+                        href={item.href}
+                        target={item.external ? '_blank' : undefined}
+                        rel={item.external ? 'noopener noreferrer' : undefined}
+                      >
+                        {item.label}
+                        {item.external ? ' ↗' : ''}
+                      </a>
+                    ) : (
+                      item
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
         </div>
         <div style={{
           marginTop:64,

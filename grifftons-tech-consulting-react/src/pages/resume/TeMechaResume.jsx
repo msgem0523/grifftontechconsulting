@@ -225,23 +225,6 @@ function TeMechaResume() {
                 </div>
             </Section>
 
-            <Section width="prose" pad="tight" className="reveal">
-                <Text type="display" sizing="M" as="h2" style={{ marginBottom: 40 }}>Websites</Text>
-                <ul style={{ ...listStyle, listStyle: 'none', paddingLeft: 0 }}>
-                    <Text as="li" type="body" sizing="L">
-                        <a href="https://www.linkedin.com/in/temecha-griffin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </Text>
-                    <Text as="li" type="body" sizing="L">
-                        <a href="https://github.com/tanewton0523" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </Text>
-                    <Text as="li" type="body" sizing="L">
-                        <a href="https://x.com/MsGem0523" target="_blank" rel="noopener noreferrer">X</a>
-                    </Text>
-                    <Text as="li" type="body" sizing="L">
-                        <a href="https://linktr.ee/MsGem0523" target="_blank" rel="noopener noreferrer">Linktree</a>
-                    </Text>
-                </ul>
-            </Section>
         </div>
     );
 }

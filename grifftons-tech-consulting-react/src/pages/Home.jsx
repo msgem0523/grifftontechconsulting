@@ -9,6 +9,7 @@ import { Chip } from '../ds/components/content/Chip.jsx';
 import { ProjectCard } from '../ds/components/content/ProjectCard.jsx';
 import { Input } from '../ds/components/forms/Input.jsx';
 import Seo from '../components/Seo.jsx';
+import { CONTACT } from '../lib/contact';
 
 const TRUST = ['Mobile-first', 'Fast delivery', 'Easy to maintain'];
 const CHECKLIST = ['Landing pages', 'Portfolio sites', 'QR pages', 'Fixes & updates'];
@@ -105,7 +106,7 @@ function Home() {
     e.preventDefault();
     const subject = encodeURIComponent(`Website inquiry from ${name}`);
     const body = encodeURIComponent(message);
-    window.location.href = `mailto:msgem0523@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${CONTACT.email}?subject=${subject}&body=${body}`;
     setStatus('Thanks! Your email app should open with your message ready to send.');
   };
 
@@ -256,8 +257,8 @@ function Home() {
             <Text type="body" sizing="M" color="var(--text-secondary)" style={{ marginTop: 12 }}>
               Send a quick note and include your timeline + goal.
             </Text>
-            <Button variant="outline" href="mailto:msgem0523@gmail.com" style={{ marginTop: 22 }}>
-              msgem0523@gmail.com
+            <Button variant="outline" href={`mailto:${CONTACT.email}`} style={{ marginTop: 22 }}>
+              {CONTACT.email}
             </Button>
             <div style={{ marginTop: 26, display: 'flex', flexDirection: 'column', gap: 10 }}>
               <Text type="body" sizing="S" color="var(--text-secondary)">

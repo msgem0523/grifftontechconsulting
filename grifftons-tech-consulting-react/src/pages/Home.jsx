@@ -113,7 +113,7 @@ function Home() {
     <div className="home-page">
       <Seo title="Website & Tech Support | Griffton's Tech Consulting" description="Custom websites, landing pages, QR pages, and practical tech support for small businesses that need simple reliable digital solutions." />
       <Section pad="large">
-        <Text type="label" sizing="M" color="var(--text-muted)">Web · Automation · Support</Text>
+        <Text type="label" sizing="M" color="var(--text-muted)">Websites & Practical Tech for Small Businesses, Creators & Service Providers</Text>
         <Text type="display" sizing="XL" as="h1" style={{ marginTop: 28, maxWidth: '20ch' }}>
           Modern websites and practical tech that helps your business run smoother.
         </Text>

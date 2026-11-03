@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07040c" />
+    <title>Page Not Found | Griffton's Tech Consulting</title>
+    <meta
+      name="description"
+      content="The page you requested could not be found. Return to Griffton's Tech Consulting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --pearl: #f7f4ee;
+        --ink: #292229;
+        --ink-soft: #433944;
+        --forest: #064c37;
+        --forest-deep: #053829;
+        --slate: #89818a;
+        --white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--pearl);
+        color: var(--ink);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px clamp(24px, 5vw, 72px);
+      }
+
+      .wordmark {
+        font-family: 'Newsreader', Georgia, serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+      }
+
+      .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      main {
+        flex: 1;
+        display: grid;
+        place-items: center;
+        padding: 72px 24px;
+        text-align: center;
+      }
+
+      .error-code {
+        margin: 0 0 16px;
+        font-family: 'Newsreader', Georgia, serif;
+        font-size: clamp(88px, 18vw, 180px);
+        font-weight: 400;
+        line-height: 0.9;
+        letter-spacing: -0.04em;
+        color: var(--forest);
+      }
+
+      h1 {
+        margin: 0;
+        font-family: 'Newsreader', Georgia, serif;
+        font-size: clamp(36px, 6vw, 64px);
+        font-weight: 400;
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        max-width: 560px;
+        margin: 20px auto 32px;
+        color: var(--ink-soft);
+        font-size: 17px;
+        line-height: 1.7;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 24px;
+        border-radius: 999px;
+        background: var(--forest);
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background 160ms ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        background: var(--forest-deep);
+      }
+
+      .button:focus-visible,
+      .nav-link:focus-visible,
+      .wordmark:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 4px;
+      }
+
+      footer {
+        background: var(--forest);
+        color: var(--white);
+        padding: 48px clamp(24px, 5vw, 72px) 24px;
+      }
+
+      .footer-wordmark {
+        font-family: 'Newsreader', Georgia, serif;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+
+      .footer-role {
+        margin-top: 8px;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        opacity: 0.7;
+      }
+
+      .copyright {
+        margin-top: 48px;
+        padding-top: 22px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 13px;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <nav aria-label="Main navigation">
+      <a class="wordmark" href="/">Griffton's Tech Consulting</a>
+      <a class="nav-link" href="/">Home</a>
+    </nav>
+
+    <main>
+      <div>
+        <p class="error-code" aria-hidden="true">404</p>
+        <h1>That page wandered off.</h1>
+        <p>
+          The page you’re looking for doesn’t exist or may have moved. Head back home and we’ll get you where you need to go.
+        </p>
+        <a class="button" href="/">Back home</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-wordmark">Griffton's Tech Consulting</div>
+      <div class="footer-role">Web · Automation · Support</div>
+      <div class="copyright">© 2026 TeMecha Griffin</div>
+    </footer>
+  </body>
+</html>

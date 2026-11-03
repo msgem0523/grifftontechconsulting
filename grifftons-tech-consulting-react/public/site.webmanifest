@@ -1,0 +1,22 @@
+{
+  "name": "Griffton's Tech Consulting",
+  "short_name": "Griffton's Tech",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#064c37",
+  "background_color": "#f7f4ee",
+  "display": "standalone",
+  "start_url": "/"
+}

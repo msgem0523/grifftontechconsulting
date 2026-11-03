@@ -4,6 +4,7 @@ import profilePicture from '../../assets/profilePicture.jpg';
 import { Section } from '../../ds/components/layout/Section.jsx';
 import { Text } from '../../ds/components/core/Text.jsx';
 import { Avatar } from '../../ds/components/content/Avatar.jsx';
+import Seo from '../../components/Seo.jsx';
 
 const listStyle = { margin: 0, paddingLeft: '1.2em', display: 'grid', gap: '10px' };
 
@@ -40,6 +41,10 @@ function TeMechaResume() {
 
     return (
         <div className="resume-page">
+            <Seo 
+                title="TeMecha Griffin - Resume" 
+                description="Resume of TeMecha Griffin, Software Engineer." 
+            />
             <Section width="prose" pad="tight" className="reveal" style={{ paddingTop: '96px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
                     <Avatar src={profilePicture} size={96} alt="picture of self" />

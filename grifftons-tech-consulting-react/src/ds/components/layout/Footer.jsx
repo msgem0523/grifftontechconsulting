@@ -6,7 +6,8 @@ export function Footer({
   columns=[],
   note,
   style,
-  ...rest}){
+  ...rest
+}){
   return (
     <footer 
       className={styles.footer} 
@@ -21,37 +22,77 @@ export function Footer({
           wrap
           style={{ maxWidth: '100%' }}
         />
-        <div style={{
-          display:'grid',
-          gridTemplateColumns:'repeat('+Math.max(columns.length,1)+',1fr)',
-          gap:32,
-          marginTop:56
-        }}>
-          {columns.map(c=><div key={c.title}>
-            <div style={{
-              fontFamily:'var(--font-body)',
-              fontSize:11,
-              letterSpacing:'.1em',
-              textTransform:'uppercase',
-              fontWeight:500,
-              color:'var(--white-50)',
-              marginBottom:14
-            }}>{c.title}</div>
-            {c.items.map(i=><div key={i} style={{
-              fontSize:15,
-              lineHeight:'28px',
-              color:'var(--white-70)'
-            }}>{i}</div>)}
-          </div>)}
+
+        <div 
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat('+Math.max(columns.length, 1) + ',1fr)',
+            gap:32,
+            marginTop:56
+          }}
+        >
+          {columns.map((c) => (
+            <div key={c.title}>
+              <div 
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 11,
+                  letterSpacing: '.1em',
+                  textTransform: 'uppercase',
+                  fontWeight: 500,
+                  color: 'var(--white-50)',
+                  marginBottom: 14
+                }}
+              >
+                {c.title}
+              </div>
+
+              {c.items.map((i) => (
+                <div 
+                  key={i} 
+                  style={{
+                    fontSize:15,
+                    lineHeight:'28px',
+                    color:'var(--white-70)',
+                  }}
+                >
+                  {i}
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
-        <div style={{
-          marginTop:64,
-          paddingTop:22,
-          borderTop:'1px solid var(--white-20)',
-          fontSize:13,
-          color:'var(--white-50)'
-        }}>
-          {note||'© '+new Date().getFullYear()+' Temecha Griffin'}
+
+        <div className={styles.socialLinks}>
+          <a
+            href="https://www.linkedin.com/in/temecha-griffin"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn (TeMecha Griffin)"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/msgem0523"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub (TeMecha Griffin)"
+          >
+            GitHub
+          </a>
+        </div>
+
+        <div 
+          style={{
+            marginTop: 64,
+            paddingTop: 22,
+            borderTop: '1px solid var(--white-20)',
+            fontSize: 13,
+            color: 'var(--white-50)',
+          }}
+        >
+          {note || '© ' + new Date().getFullYear() + ' TeMecha Griffin'}
         </div>
       </div>
     </footer>

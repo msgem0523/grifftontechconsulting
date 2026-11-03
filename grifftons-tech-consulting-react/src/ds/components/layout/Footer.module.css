@@ -25,3 +25,21 @@
     padding-inline: 18px;
   }
 }
+
+.socialLinks {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.socialLinks a {
+  color: var(--white-70);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.socialLinks a:hover,
+.socialLinks a:focus-visible {
+  color: var(--white);
+  text-decoration: underline;
+}
